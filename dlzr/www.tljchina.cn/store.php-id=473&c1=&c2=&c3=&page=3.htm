@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="东云创达" />
+<meta name="description" content='鲜果奶油,生日蛋糕,提拉米苏,面包' />
+<meta name="keywords" content='多乐之日 (Tous Les Jours)是韩国最大的食品公司CJ集团旗下的知名烘焙品牌。提供注重原料并充分发挥材料自然美味的自制式面包和蛋糕的健康欧式面包房。' />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">  
+<title>从选料就上乘的健康欧式烘培店-多乐之日(Tous Les Jours)</title>
+<link href="favicon.ico" tppabs="http://www.tljchina.cn/favicon.ico" mce_href="favicon.ico" rel="bookmark" type="image/x-icon" />  
+<link href="favicon.ico" tppabs="http://www.tljchina.cn/favicon.ico" mce_href="favicon.ico" tppabs="http://www.tljchina.cn/favicon.ico" rel="icon" type="image/x-icon" />  
+<link href="favicon.ico" tppabs="http://www.tljchina.cn/favicon.ico" mce_href="favicon.ico" tppabs="http://www.tljchina.cn/favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
+<link href="css/style.css" tppabs="http://www.tljchina.cn/css/style.css" rel="stylesheet" type="text/css" /><script type="text/javascript" src="js/jquery-1.4.2.min.js" tppabs="http://www.tljchina.cn/js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/html5.js" tppabs="http://www.tljchina.cn/js/html5.js"></script></head>
+<script>
+function fcity(id,city){
+  
+        $.ajax({
+        url:"ajaxcity.php.htm"/*tpa=http://www.tljchina.cn/ajaxcity.php*/,
+        type:"post",
+        async: false,
+        datatype:"json",
+        data:"id="+id,
+        success:function(msg){
+
+        //alert(msg[0].id);
+        var arr=eval( msg );
+           
+        
+        var l=arr.length;
+
+        var str='';
+        
+        if(city=='city')
+        {
+            citys='city1';
+        }else{
+            citys='';
+        }
+        if(arr){
+
+        for(var i=0;i<l;i++){
+           str+="<li><a href='javascript:;' onclick=\'fcity(\""+arr[i].id+"\",\""+citys+"\")\' >"+arr[i].name+"</a></li>";
+        }     }   
+       
+        $('#'+city).html(str);
+        str=null;
+            }
+        })
+
+
+
+}
+
+
+
+
+
+
+</script>
+<body style=" background:url(uploads/image/1451467790.jpg)/*tpa=http://www.tljchina.cn/uploads/image/1451467790.jpg*/ repeat;">
+	<header class="header clearfix">
+    <h1><a href="index.php.htm" tppabs="http://www.tljchina.cn/index.php"><img src="images/logo.png" tppabs="http://www.tljchina.cn/images/logo.png" alt="TOUS les JOURS"></a></h1>
+    <div class="top-link">
+        <div class="hb"><a href="javascript:;" id="login" class="">登录</a>            <div class="lobox">
+                <div class="pad">
+                    <form method="post" action="http://www.tljchina.cn/login.php">
+                    <p class="lt"><span style="color:#c8c9c9; font-size:23px;">LOGIN</span><br/>登录多乐之日会员俱乐部</p>
+                    <div class="t-user-ipt"><span></span><input name="username" type="text" class="text" placeholder="username"></div>
+                    <div class="t-user-psw"><span></span><input name="pwd" type="password" class="text" placeholder="password"></div>
+                    <div class="t-btns"><button type="submit" name="sub" class="btn">登录 LOGIN</button><a href="reg.php.htm" tppabs="http://www.tljchina.cn/reg.php" class="t-goReg"></a></div>
+                    <div class="hz-login"><a href="#" class="xl-hz" title="新浪账号登录"></a><a href="#" class="qq-hz" title="qq号登录"></a></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <em>|</em><a href="store.php.htm" tppabs="http://www.tljchina.cn/store.php" class="dlz">多乐之日门店</a><em>|</em><a onclick="AddFavorite(window.location,document.title)" href="javascript:void(0)"class="ctc">收藏网站</a>
+    </div>
+</header>
+<div class="ledge"></div>
+<script>
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+
+  })(window,document,'script','../www.google-analytics.com/analytics.js'/*tpa=http://www.google-analytics.com/analytics.js*/,'ga');
+  ga('create', 'UA-47085500-10', 'auto');
+
+  ga('send', 'pageview');
+</script>    <div class="banner wrapper"><img src="uploads/image/1409410321.jpg" tppabs="http://www.tljchina.cn/uploads/image/1409410321.jpg"></div> 
+    <div class="content wrapper clearfix">
+    	<aside class="left-side">
+        	<div class="eg">
+                <nav class="i-nav nav" id="side_height">
+                    <ul>
+                        <li><a href="javascript:;" class="dropdown a1 ">美食及饮品</a>
+                        	<ul class="sub-nav" >
+                                                                                                	<li><a href="new_product.php-id=497.htm" tppabs="http://www.tljchina.cn/new_product.php?id=497" >新品介绍</a></li>
+                                                                                                                                    	<li><a href="new_product.php-id=462.htm" tppabs="http://www.tljchina.cn/new_product.php?id=462" >人气面包</a></li>
+                                                                                                                                            <li><a href="product_list.php-id=463.htm" tppabs="http://www.tljchina.cn/product_list.php?id=463" >大蛋糕</a></li>
+                                                                                                                                    	<li><a href="product.php-id=464.htm" tppabs="http://www.tljchina.cn/product.php?id=464" >卡通蛋糕</a></li>
+                                                                                                                                    	<li><a href="product.php-id=465.htm" tppabs="http://www.tljchina.cn/product.php?id=465" >切片蛋糕</a></li>
+                                                                                                                                    	<li><a href="product.php-id=466.htm" tppabs="http://www.tljchina.cn/product.php?id=466" >三明治</a></li>
+                                                                                                                                    	<li><a href="product.php-id=467.htm" tppabs="http://www.tljchina.cn/product.php?id=467" >饮料</a></li>
+                                                                                                                                    	<li><a href="product.php-id=468.htm" tppabs="http://www.tljchina.cn/product.php?id=468" >酥点</a></li>
+                                                                                                                                    	<li><a href="product.php-id=469.htm" tppabs="http://www.tljchina.cn/product.php?id=469" >其他</a></li>
+                                                                                                 
+                            </ul>
+                        </li>
+                        <li><a href="javascript:;" class="dropdown a2 hover">门店介绍</a>
+                        	<ul class="sub-nav" style="display:block;">
+                            	<li><a href="store.php.htm" tppabs="http://www.tljchina.cn/store.php" class="on">门店分布</a></li>
+                                <li><a href="story.php.htm" tppabs="http://www.tljchina.cn/story.php" >门店故事</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:;" class="dropdown a3 ">市场活动</a>
+                        	<ul class="sub-nav" >
+                            	<li><a href="activity.php.htm" tppabs="http://www.tljchina.cn/activity.php" >全国活动</a></li>
+                                <li><a href="area.php.htm" tppabs="http://www.tljchina.cn/area.php">地区活动</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:;" class="dropdown a4 ">多乐俱乐部</a>
+                        	<ul class="sub-nav" >
+                                <!--<li><a href="nologin.php" >个人信息管理</a></li>-->
+								<li><a href="javascript:alert('系统正在维护，暂时无法登陆，造成不便非常抱歉');">个人信息管理</a></li>
+                            	<li><a href="card.php.htm" tppabs="http://www.tljchina.cn/card.php" >储值卡介绍</a></li>
+                                <li><a href="download.php.htm" tppabs="http://www.tljchina.cn/download.php" >优惠下载</a></li>
+                                <li><a href="integral.php.htm" tppabs="http://www.tljchina.cn/integral.php" >积分查询</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:;" class="dropdown a5 ">加入我们</a>
+                        	<ul class="sub-nav" >
+                            	<li><a href="join.php.htm" tppabs="http://www.tljchina.cn/join.php" >加入多乐之日</a></li>
+                                <li><a href="job.php.htm" tppabs="http://www.tljchina.cn/job.php"  >招聘信息</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:;" class="dropdown a6 ">品牌故事</a>
+                        	<ul class="sub-nav" >
+                                                            	<li><a  href="about.php-id=486.htm" tppabs="http://www.tljchina.cn/about.php?id=486">公司简介</a></li>
+                                                            	<li><a  href="about.php-id=487.htm" tppabs="http://www.tljchina.cn/about.php?id=487">品牌故事</a></li>
+                                                            	<li><a  href="news.php-id=488.htm" tppabs="http://www.tljchina.cn/news.php?id=488">公司新闻</a></li>
+                                                            	<li><a  href="about.php-id=489.htm" tppabs="http://www.tljchina.cn/about.php?id=489">大宗团购</a></li>
+                                                                
+                                <li><a href="contact.php.htm" tppabs="http://www.tljchina.cn/contact.php" class="on">联系我们</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+<script type="text/javascript">
+$('.dropdown').click(function(){
+	var index=$('.dropdown').index(this)
+	$('.sub-nav').eq(index).toggle()
+});
+</script>                <section class="main" id="main_height">
+        	<div class="range">
+            	<div class="m-cloumn">
+                	<h3 class="store">门店介绍</h3>
+                    <span>Store introduction<br/><em>我的门店我的故事</em></span>
+                    <div class="bread cfont"><a href="index.php.htm" tppabs="http://www.tljchina.cn/index.php">首页</a> / <a href="store.php.htm" tppabs="http://www.tljchina.cn/store.php">门店介绍 </a> / 门店分布</div>
+                </div>
+                <div class="map">
+                	<div class="china">
+                	  <object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="457" height="377">
+                	    <param name="movie" value="map.swf" tppabs="http://www.tljchina.cn/map.swf">
+                	    <param name="quality" value="high">
+                	    <param name="wmode" value="opaque">
+                	    <param name="swfversion" value="15.0.0.0">
+                	    <!-- 此 param 标签提示使用 Flash Player 6.0 r65 和更高版本的用户下载最新版本的 Flash Player。如果您不想让用户看到该提示，请将其删除。 -->
+                	    <param name="expressinstall" value="Scripts/expressInstall.swf" tppabs="http://www.tljchina.cn/Scripts/expressInstall.swf">
+                	    <!-- 下一个对象标签用于非 IE 浏览器。所以使用 IECC 将其从 IE 隐藏。 -->
+                	    <!--[if !IE]>-->
+                	    <object type="application/x-shockwave-flash" data="map.swf" tppabs="http://www.tljchina.cn/map.swf" width="457" height="377">
+                	      <!--<![endif]-->
+                	      <param name="quality" value="high">
+                	      <param name="wmode" value="opaque">
+                	      <param name="swfversion" value="15.0.0.0">
+                	      <param name="expressinstall" value="Scripts/expressInstall.swf" tppabs="http://www.tljchina.cn/Scripts/expressInstall.swf">
+                	      <!-- 浏览器将以下替代内容显示给使用 Flash Player 6.0 和更低版本的用户。 -->
+                	      <div>
+                	        <h4>此页面上的内容需要较新版本的 Adobe Flash Player。</h4>
+                	        <p><a href="javascript:if(confirm(%27http://www.adobe.com/go/getflashplayer  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.adobe.com/go/getflashplayer%27" tppabs="http://www.adobe.com/go/getflashplayer"><img src="../www.adobe.com/images/shared/download_buttons/get_flash_player.gif" tppabs="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="获取 Adobe Flash Player" width="112" height="33" /></a></p>
+              	        </div>
+                	      <!--[if !IE]>-->
+              	      </object>
+                	    <!--<![endif]-->
+              	    </object>
+                	</div>
+                    <div class="slt">
+                    	<p><img src="images/md.png" tppabs="http://www.tljchina.cn/images/md.png"></p>
+                        <p><img src="images/pic32.jpg" tppabs="http://www.tljchina.cn/images/pic32.jpg"></p>
+                        <form method="get">
+                        <div class="select_box"><input type="text" class="text" value="请选择..." name="c1" readonly>
+                            <ul class="select_ul">
+                                                                <li><a href="javascript:;" onclick="fcity('545','city')">山西省</a></li>
+                                                                <li><a href="javascript:;" onclick="fcity('564','city')">新疆</a></li>
+                                                                <li><a href="javascript:;" onclick="fcity('492','city')">北京市</a></li>
+                                                                <li><a href="javascript:;" onclick="fcity('505','city')">天津市</a></li>
+                                                                <li><a href="javascript:;" onclick="fcity('510','city')">山东省</a></li>
+                                                                <li><a href="javascript:;" onclick="fcity('513','city')">上海市</a></li>
+                                                                <li><a href="javascript:;" onclick="fcity('522','city')">四川省</a></li>
+                                                                <li><a href="javascript:;" onclick="fcity('526','city')">河南省</a></li>
+                                                                <li><a href="javascript:;" onclick="fcity('529','city')">福建省</a></li>
+                                                                <li><a href="javascript:;" onclick="fcity('532','city')">陕西省</a></li>
+                                                                <li><a href="javascript:;" onclick="fcity('536','city')">浙江省</a></li>
+                                                                
+                            </ul>
+                        </div>
+                        <div class="select_box"><input type="text" class="text" value="请选择..." name="c2" readonly>
+                            <ul class="select_ul" id="city">
+                               
+                            </ul>
+                        </div>
+                        <div class="select_box"><input type="text" class="text" name="c3" value="请选择..." readonly>
+                            <ul class="select_ul" id="city1">
+                               
+                            </ul>
+                        </div>
+                        <button type="submit" class="btn query">确定查询  QUERY</button>
+                    </form>
+                    </div>
+                </div>
+                <div class="list clearfix">
+                	<table width="100%" class="store-lsit">
+                    	<tr>
+                        	<th width="15%">店铺名称</th>
+                            <th width="15%">营业时间</th>
+                            <th width="40%">店铺地址</th>
+                            <th width="15%">店铺电话</th>
+                            <th width="15%">店铺路线</th>
+                        </tr>
+                                                <tr>
+                        	<td>天津水游城店</td>
+                            <td>10:00~22:00</td>
+                            <td>天津市红桥区大丰路18-24号F1AS10店铺（大丰路与芥园道交口）</td>
+                            <td>022-58301990</td>
+                            <td><a href="store_infor.php-nid=265.htm" tppabs="http://www.tljchina.cn/store_infor.php?nid=265" class="detail">查看详细</a></td>
+                        </tr>
+                                                <tr>
+                        	<td>塘沽伊势丹店</td>
+                            <td>11:00~21:00</td>
+                            <td>天津市经济技术开发区泰达MSD产业区B区伊势丹百货B1</td>
+                            <td>022—65541041</td>
+                            <td><a href="store_infor.php-nid=266.htm" tppabs="http://www.tljchina.cn/store_infor.php?nid=266" class="detail">查看详细</a></td>
+                        </tr>
+                                                <tr>
+                        	<td>大望路华贸店</td>
+                            <td>7:30~22:00(一~五）10:00~22:00（六、日）</td>
+                            <td>北京市朝阳区建国路79号华贸购物中心B111B</td>
+                            <td>010-65305327</td>
+                            <td><a href="store_infor.php-nid=267.htm" tppabs="http://www.tljchina.cn/store_infor.php?nid=267" class="detail">查看详细</a></td>
+                        </tr>
+                                                <tr>
+                        	<td>山东威海乐天店</td>
+                            <td>8:00~22:30</td>
+                            <td>威海环翠区威高广场乐天百货一层1F-08</td>
+                            <td>0631-3568198</td>
+                            <td><a href="store_infor.php-nid=268.htm" tppabs="http://www.tljchina.cn/store_infor.php?nid=268" class="detail">查看详细</a></td>
+                        </tr>
+                                                <tr>
+                        	<td>soho现代城店</td>
+                            <td>7:00-22:30</td>
+                            <td>北京市朝阳区建国路88号soho现代城7-10号楼</td>
+                            <td>010-85801149</td>
+                            <td><a href="store_infor.php-nid=269.htm" tppabs="http://www.tljchina.cn/store_infor.php?nid=269" class="detail">查看详细</a></td>
+                        </tr>
+                                                <tr>
+                        	<td>颐堤港店</td>
+                            <td>8:00-22:00</td>
+                            <td>北京市朝阳区酒仙桥颐堤港商场地下一层LG-18</td>
+                            <td>010-84260938</td>
+                            <td><a href="store_infor.php-nid=270.htm" tppabs="http://www.tljchina.cn/store_infor.php?nid=270" class="detail">查看详细</a></td>
+                        </tr>
+                                                <tr>
+                        	<td>大望路金地中心店</td>
+                            <td>8:00~22:30</td>
+                            <td>北京市朝阳区建国路91号金地广场地下一层B111A</td>
+                            <td>010-8571-3159</td>
+                            <td><a href="store_infor.php-nid=271.htm" tppabs="http://www.tljchina.cn/store_infor.php?nid=271" class="detail">查看详细</a></td>
+                        </tr>
+                                                <tr>
+                        	<td>常营华联店</td>
+                            <td>7：00-21：30</td>
+                            <td>北京市朝阳区朝阳北路17好常营华联购物中心1楼</td>
+                            <td>010-56857466</td>
+                            <td><a href="store_infor.php-nid=272.htm" tppabs="http://www.tljchina.cn/store_infor.php?nid=272" class="detail">查看详细</a></td>
+                        </tr>
+                                                <tr>
+                        	<td>昌平万科店</td>
+                            <td>10:00~22:00</td>
+                            <td>北京市昌平区金隅万科广场地下一层B1005商铺</td>
+                            <td>010-8976-5492</td>
+                            <td><a href="store_infor.php-nid=273.htm" tppabs="http://www.tljchina.cn/store_infor.php?nid=273" class="detail">查看详细</a></td>
+                        </tr>
+                                                <tr>
+                        	<td>朝北大悦城店</td>
+                            <td>9：00-22：00</td>
+                            <td>北京市朝阳区朝阳北路大悦城地下一层B1T-B107</td>
+                            <td>010-85520773</td>
+                            <td><a href="store_infor.php-nid=274.htm" tppabs="http://www.tljchina.cn/store_infor.php?nid=274" class="detail">查看详细</a></td>
+                        </tr>
+                                                <tr>
+                        	<td>韩国城店</td>
+                            <td>8:00-24:00</td>
+                            <td>北京市朝阳区望京西园423号楼一层</td>
+                            <td>010-84762166</td>
+                            <td><a href="store_infor.php-nid=275.htm" tppabs="http://www.tljchina.cn/store_infor.php?nid=275" class="detail">查看详细</a></td>
+                        </tr>
+                                                <tr>
+                        	<td>望京华彩店</td>
+                            <td>9:00-22:00</td>
+                            <td>朝阳区广顺北大街16号望京商业中心1层A172</td>
+                            <td>010-59780520</td>
+                            <td><a href="store_infor.php-nid=276.htm" tppabs="http://www.tljchina.cn/store_infor.php?nid=276" class="detail">查看详细</a></td>
+                        </tr>
+                                                <tr>
+                        	<td>虹泉路店</td>
+                            <td>7:00~23:00</td>
+                            <td>闵行区虹泉路1078号8幢“井亭天地生活广场1层07单元</td>
+                            <td>021-6420-7737</td>
+                            <td><a href="store_infor.php-nid=277.htm" tppabs="http://www.tljchina.cn/store_infor.php?nid=277" class="detail">查看详细</a></td>
+                        </tr>
+                                                <tr>
+                        	<td>莘朱路店</td>
+                            <td>10:00~22:00</td>
+                            <td>闵行区都市路5001号仲盛世界商城地下一层B1F17号</td>
+                            <td>021-6405-0367</td>
+                            <td><a href="store_infor.php-nid=278.htm" tppabs="http://www.tljchina.cn/store_infor.php?nid=278" class="detail">查看详细</a></td>
+                        </tr>
+                                                
+                    </table>
+                    <div class="pages">
+                    	<a class="up"  href="store.php-id=473&c1=&c2=&c3=&page=2.htm" tppabs="http://www.tljchina.cn/store.php?id=473&c1=&c2=&c3=&page=2" title="上一页" >上一页</a> <a href="store.php-id=473&c1=&c2=&c3=&page=1.htm" tppabs="http://www.tljchina.cn/store.php?id=473&c1=&c2=&c3=&page=1">1</a>&nbsp; <a href="store.php-id=473&c1=&c2=&c3=&page=2.htm" tppabs="http://www.tljchina.cn/store.php?id=473&c1=&c2=&c3=&page=2">2</a>&nbsp; <a class="cur">3</a> <a href="store.php-id=473&c1=&c2=&c3=&page=4.htm" tppabs="http://www.tljchina.cn/store.php?id=473&c1=&c2=&c3=&page=4">4</a>&nbsp; <a href="store.php-id=473&c1=&c2=&c3=&page=5.htm" tppabs="http://www.tljchina.cn/store.php?id=473&c1=&c2=&c3=&page=5">5</a>&nbsp; <a class="down"  title="下一页" href="store.php-id=473&c1=&c2=&c3=&page=4.htm" tppabs="http://www.tljchina.cn/store.php?id=473&c1=&c2=&c3=&page=4" >下一页</a>  
+
+
+
+                    </div>                    <a href="#" id="go_top">返回顶部</a>  
+                </div>
+            </div>
+        </section>
+    </div>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".select_box input").click(function(){
+		var thisinput=$(this);
+		var thisul=$(this).parent().find("ul");
+		if(thisul.css("display")=="none"){
+			if(thisul.height()>200){thisul.css({height:"200"+"px","overflow-y":"scroll" })};
+			thisul.fadeIn("100");
+			thisul.hover(function(){},function(){thisul.fadeOut("100");})
+			thisul.find("li").click(function(){thisinput.val($(this).text());thisul.fadeOut("100");}).hover(function(){$(this).addClass("hover");},function(){$(this).removeClass("hover");});
+			}
+		else{
+			thisul.fadeOut("fast");
+			}
+	})
+	$("#submit").click(function(){
+		var endinfo="";
+		$(".select_box input:text").each(function(i){
+			endinfo=endinfo+(i+1)+":"+$(this).val()+";\n";							 
+		})							
+		alert(endinfo);						
+	})
+});
+</script>    
+  	<script type="text/javascript">
+$(function(){
+var mHeight=$('#main_height').height()
+	var sHeight=$('#side_height').height()
+	if(mHeight>sHeight){
+	$('#side_height').css('min-height',mHeight-50)
+	}
+})
+$(window).scroll(function(){
+	var mHeight=$('#main_height').height()
+	var sHeight=$('#side_height').height()
+	if(mHeight>sHeight){
+	$('#side_height').css('min-height',mHeight-50)
+	}
+})
+$(function(){
+	$('#login').click(function(){
+		if($(".lobox").is(":hidden"))
+		{
+			$('#login').addClass('on')
+		}else{
+			$('#login').removeClass('on')
+		}
+        $(".lobox").toggle();
+	});
+});
+</script>
+<script type="text/javascript">
+function AddFavorite(sURL, sTitle) {             //加入收藏
+		sURL = encodeURI(sURL);
+	try{  
+		window.external.addFavorite(sURL, sTitle);  
+	}catch(e) {  
+		try{  
+			window.sidebar.addPanel(sTitle, sURL, "");  
+		}catch (e) {  
+			alert("加入收藏失败，请使用Ctrl+D进行添加,或手动在浏览器里进行设置.");
+		}; 
+	};
+};
+</script>
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F481895fdfd7902d3e3cef3777e0c254e' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<div class="quickmenus">
+	<span class="qtit"></span>
+    <div class="quickList">
+    	<ul>
+        	<li><a href="#" class="q1"></a></li>
+            <li><a href="index.php.htm" tppabs="http://www.tljchina.cn/index.php" class="q2"></a></li>
+            <li><a href="shopcar.php.htm" tppabs="http://www.tljchina.cn/shopcar.php" class="q3" ><em id="cnums">0</em></a></li>
+            <li><a href="store.php.htm" tppabs="http://www.tljchina.cn/store.php" class="q4"></a></li>
+            <li><a href="javascript:if(confirm(%27http://weibo.com/duolezhiri?c=spr_qdhz_bd_baidusmt_weibo_s&nick=  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://weibo.com/duolezhiri?c=spr_qdhz_bd_baidusmt_weibo_s&nick=%27" tppabs="http://weibo.com/duolezhiri?c=spr_qdhz_bd_baidusmt_weibo_s&nick=" target="_blank" class="q5"></a></li>
+            <li style="border:none;"><a href="#" class="q6"></a>
+            	<div class="er"><img src="images/er.jpg" tppabs="http://www.tljchina.cn/images/er.jpg"></div>
+            </li>
+        </ul>
+        
+    </div>
+</div>
+<script type="text/javascript">
+$('.q6').mouseover(function(){
+	$('.er').show()
+});
+$('.q6').mouseout(function(){
+	$('.er').hide()
+});
+</script>
+<section class="olink">
+    	<div class="link-list clearfix">
+        	<ul>
+            	<li><a href="javascript:if(confirm(%27http://www.cjfoodvillechina.com/main.asp  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.cjfoodvillechina.com/main.asp%27" tppabs="http://www.cjfoodvillechina.com/main.asp" target="_blank"><img src="images/l1.png" tppabs="http://www.tljchina.cn/images/l1.png"></a></li>
+                <li><a href="javascript:if(confirm(%27http://www.ivips.co.kr/main.asp  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.ivips.co.kr/main.asp%27" tppabs="http://www.ivips.co.kr/main.asp" target="_blank"><img src="images/l2.png" tppabs="http://www.tljchina.cn/images/l2.png"></a></li>
+                <!--<li><a href="http://www.twosome.co.kr/main.asp" target="_blank"><img src="images/l3.jpg"></a></li>-->
+                <li><a href="javascript:if(confirm(%27http://www.bibigo.co.kr/KOR/index.asp  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.bibigo.co.kr/KOR/index.asp%27" tppabs="http://www.bibigo.co.kr/KOR/index.asp" target="_blank"><img src="images/l4.png" tppabs="http://www.tljchina.cn/images/l4.png"></a></li>
+                <!--<li><a href="http://www.icoldstone.co.kr/index.asp" target="_blank"><img src="images/l5.jpg"></a></li>
+                <li><a href="http://www.chinafactory.co.kr/intro/140624/" target="_blank"><img src="images/l6.jpg"></a></li>
+                <li><a href="http://www.cheiljemyunso.co.kr/main.asp" target="_blank"><img src="images/l7.jpg"></a></li>
+                <li><a href="http://www.thesteakhouse.co.kr/index.asp" target="_blank"><img src="images/l8.jpg"></a></li>-->
+                <li><a href="javascript:if(confirm(%27http://www.twosome.co.kr/coffee/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.twosome.co.kr/coffee/%27" tppabs="http://www.twosome.co.kr/coffee/" target="_blank"><img src="images/l9.png" tppabs="http://www.tljchina.cn/images/l9.png"></a></li>
+            </ul>
+        </div>
+    </section>
+    <footer class="copyright cfont wrapper">
+    	<img src="images/minlogo.png" tppabs="http://www.tljchina.cn/images/minlogo.png">&nbsp;&nbsp;&nbsp;&nbsp;希杰多乐之日 TEL : 010-5939-6000&nbsp;&nbsp;&nbsp;&nbsp;FAX : 010-5939-6298&nbsp;&nbsp;&nbsp;&nbsp;CopyRight(C) 2012 BY 多乐之日 reserved.&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:if(confirm(%27http://www.miitbeian.gov.cn/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.miitbeian.gov.cn/%27" tppabs="http://www.miitbeian.gov.cn/" target="_blank">京ICP备 10206698号</a> 
+    </footer> 
+
+</body>
+</html>

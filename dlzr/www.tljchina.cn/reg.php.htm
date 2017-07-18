@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="东云创达" />
+<meta name="description" content='鲜果奶油,生日蛋糕,提拉米苏,面包' />
+<meta name="keywords" content='多乐之日 (Tous Les Jours)是韩国最大的食品公司CJ集团旗下的知名烘焙品牌。提供注重原料并充分发挥材料自然美味的自制式面包和蛋糕的健康欧式面包房。' />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">  
+<title>从选料就上乘的健康欧式烘培店-多乐之日(Tous Les Jours)</title>
+<link href="favicon.ico" tppabs="http://www.tljchina.cn/favicon.ico" mce_href="favicon.ico" rel="bookmark" type="image/x-icon" />  
+<link href="favicon.ico" tppabs="http://www.tljchina.cn/favicon.ico" mce_href="favicon.ico" tppabs="http://www.tljchina.cn/favicon.ico" rel="icon" type="image/x-icon" />  
+<link href="favicon.ico" tppabs="http://www.tljchina.cn/favicon.ico" mce_href="favicon.ico" tppabs="http://www.tljchina.cn/favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
+<link href="css/style.css" tppabs="http://www.tljchina.cn/css/style.css" rel="stylesheet" type="text/css" /><script type="text/javascript" src="js/jquery-1.4.2.min.js" tppabs="http://www.tljchina.cn/js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/html5.js" tppabs="http://www.tljchina.cn/js/html5.js"></script><script type="text/javascript" src="js/cc.js" tppabs="http://www.tljchina.cn/js/cc.js"></script>
+
+</head>
+<script>
+function checkreg(){
+    //return false;
+    var ccgtg=true;
+    if(cc('username','请输入6-12个字符，包括字母，数字和下划线',/^[a-zA-z0-9_]{6,12}$/)==1){
+        return false;
+        }
+    
+    if(cc('pwd','请填写密码（8-12位字母数字或特殊符号）',/^[0-9a-zA-Z`~!@#$%\^&*\(\)-_+={}|\[\]\;\,\.\\\/\?\<\>]{8,12}$/)==1){
+        return false;
+        }
+    if($('#rpwd').val()!=$('#pwd').val())
+    {   
+        $('#rpwd').focus();
+        $('#_rpwd').html('<font color="red">两次密码不相同</font>');
+        return false;
+        }else{
+            $('#_rpwd').html('');
+            }
+   if(cc('tel','请填写正确的手机号码',/^13[0-9]{1}[0-9]{8}$|15[0-9]{1}[0-9]{8}$|18[0-9]{1}[0-9]{8}$/)==1){
+        return false;
+        }
+ if(cc('address','请填写正确的地址用于接收积分兑换的礼品',/^.+$/)==1){
+        return false;
+        }
+
+if(cc('yb','请填写正确的邮政编码',/^.+$/)==1){
+        return false;
+        }
+    if(cc('email','请填写正确的邮箱',/^([a-zA-Z0-9])+([a-zA-Z0-9._-])*@([a-zA-Z0-9_-])+([a-zA-Z0-9._-]+)+$/)==1){
+        return false;
+        }
+   
+
+
+    var xy=document.getElementById('xy');
+    if(!xy.checked){
+    alert('同意注册协议条款后方可注册');
+    return false;
+        }
+
+    
+   
+
+    
+
+
+$.ajax({
+    url:"ajaxch.php.htm"/*tpa=http://www.tljchina.cn/ajaxch.php*/,
+    type:"post",
+    async: false,
+    datatype:"json",
+    data:"username="+$('#username').val()+"&email="+$('#email').val(),
+    success:function(msg){
+
+    var arr=eval('(' + msg + ')');
+        
+    if(arr.u==1){
+        alert('用户名已存在');
+        ccgtg=false;
+        }
+    if(arr.e==1){
+        alert('邮箱已存在');
+        ccgtg=false;}
+    
+
+        }
+    })
+
+
+    if(!ccgtg)
+    {   
+        return false;
+    }
+  
+}
+</script>
+<body style=" background:url(uploads/image/1451467790.jpg)/*tpa=http://www.tljchina.cn/uploads/image/1451467790.jpg*/ repeat;">
+	<header class="header clearfix">
+    <h1><a href="index.php.htm" tppabs="http://www.tljchina.cn/index.php"><img src="images/logo.png" tppabs="http://www.tljchina.cn/images/logo.png" alt="TOUS les JOURS"></a></h1>
+    <div class="top-link">
+        <div class="hb"><a href="javascript:;" id="login" class="">登录</a>            <div class="lobox">
+                <div class="pad">
+                    <form method="post" action="http://www.tljchina.cn/login.php">
+                    <p class="lt"><span style="color:#c8c9c9; font-size:23px;">LOGIN</span><br/>登录多乐之日会员俱乐部</p>
+                    <div class="t-user-ipt"><span></span><input name="username" type="text" class="text" placeholder="username"></div>
+                    <div class="t-user-psw"><span></span><input name="pwd" type="password" class="text" placeholder="password"></div>
+                    <div class="t-btns"><button type="submit" name="sub" class="btn">登录 LOGIN</button><a href="reg.php.htm" tppabs="http://www.tljchina.cn/reg.php" class="t-goReg"></a></div>
+                    <div class="hz-login"><a href="#" class="xl-hz" title="新浪账号登录"></a><a href="#" class="qq-hz" title="qq号登录"></a></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <em>|</em><a href="store.php.htm" tppabs="http://www.tljchina.cn/store.php" class="dlz">多乐之日门店</a><em>|</em><a onclick="AddFavorite(window.location,document.title)" href="javascript:void(0)"class="ctc">收藏网站</a>
+    </div>
+</header>
+<div class="ledge"></div>
+<script>
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+
+  })(window,document,'script','../www.google-analytics.com/analytics.js'/*tpa=http://www.google-analytics.com/analytics.js*/,'ga');
+  ga('create', 'UA-47085500-10', 'auto');
+
+  ga('send', 'pageview');
+</script>    <div class="banner wrapper"><img src="images/banner4.jpg" tppabs="http://www.tljchina.cn/images/banner4.jpg"></div> 
+    <div class="content wrapper clearfix">
+    	<aside class="left-side">
+        	<div class="eg">
+                <nav class="i-nav nav" id="side_height">
+                    <ul>
+                        <li><a href="javascript:;" class="dropdown a1 ">美食及饮品</a>
+                        	<ul class="sub-nav" >
+                                                                                                	<li><a href="new_product.php-id=497.htm" tppabs="http://www.tljchina.cn/new_product.php?id=497" >新品介绍</a></li>
+                                                                                                                                    	<li><a href="new_product.php-id=462.htm" tppabs="http://www.tljchina.cn/new_product.php?id=462" >人气面包</a></li>
+                                                                                                                                            <li><a href="product_list.php-id=463.htm" tppabs="http://www.tljchina.cn/product_list.php?id=463" >大蛋糕</a></li>
+                                                                                                                                    	<li><a href="product.php-id=464.htm" tppabs="http://www.tljchina.cn/product.php?id=464" >卡通蛋糕</a></li>
+                                                                                                                                    	<li><a href="product.php-id=465.htm" tppabs="http://www.tljchina.cn/product.php?id=465" >切片蛋糕</a></li>
+                                                                                                                                    	<li><a href="product.php-id=466.htm" tppabs="http://www.tljchina.cn/product.php?id=466" >三明治</a></li>
+                                                                                                                                    	<li><a href="product.php-id=467.htm" tppabs="http://www.tljchina.cn/product.php?id=467" >饮料</a></li>
+                                                                                                                                    	<li><a href="product.php-id=468.htm" tppabs="http://www.tljchina.cn/product.php?id=468" >酥点</a></li>
+                                                                                                                                    	<li><a href="product.php-id=469.htm" tppabs="http://www.tljchina.cn/product.php?id=469" >其他</a></li>
+                                                                                                 
+                            </ul>
+                        </li>
+                        <li><a href="javascript:;" class="dropdown a2 ">门店介绍</a>
+                        	<ul class="sub-nav" >
+                            	<li><a href="store.php.htm" tppabs="http://www.tljchina.cn/store.php" >门店分布</a></li>
+                                <li><a href="story.php.htm" tppabs="http://www.tljchina.cn/story.php" >门店故事</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:;" class="dropdown a3 ">市场活动</a>
+                        	<ul class="sub-nav" >
+                            	<li><a href="activity.php.htm" tppabs="http://www.tljchina.cn/activity.php" >全国活动</a></li>
+                                <li><a href="area.php.htm" tppabs="http://www.tljchina.cn/area.php">地区活动</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:;" class="dropdown a4 ">多乐俱乐部</a>
+                        	<ul class="sub-nav" >
+                                <!--<li><a href="nologin.php" >个人信息管理</a></li>-->
+								<li><a href="javascript:alert('系统正在维护，暂时无法登陆，造成不便非常抱歉');">个人信息管理</a></li>
+                            	<li><a href="card.php.htm" tppabs="http://www.tljchina.cn/card.php" >储值卡介绍</a></li>
+                                <li><a href="download.php.htm" tppabs="http://www.tljchina.cn/download.php" >优惠下载</a></li>
+                                <li><a href="integral.php.htm" tppabs="http://www.tljchina.cn/integral.php" >积分查询</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:;" class="dropdown a5 ">加入我们</a>
+                        	<ul class="sub-nav" >
+                            	<li><a href="join.php.htm" tppabs="http://www.tljchina.cn/join.php" >加入多乐之日</a></li>
+                                <li><a href="job.php.htm" tppabs="http://www.tljchina.cn/job.php"  >招聘信息</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:;" class="dropdown a6 ">品牌故事</a>
+                        	<ul class="sub-nav" >
+                                                            	<li><a  href="about.php-id=486.htm" tppabs="http://www.tljchina.cn/about.php?id=486">公司简介</a></li>
+                                                            	<li><a  href="about.php-id=487.htm" tppabs="http://www.tljchina.cn/about.php?id=487">品牌故事</a></li>
+                                                            	<li><a  href="news.php-id=488.htm" tppabs="http://www.tljchina.cn/news.php?id=488">公司新闻</a></li>
+                                                            	<li><a  href="about.php-id=489.htm" tppabs="http://www.tljchina.cn/about.php?id=489">大宗团购</a></li>
+                                                                
+                                <li><a href="contact.php.htm" tppabs="http://www.tljchina.cn/contact.php" class="on">联系我们</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+<script type="text/javascript">
+$('.dropdown').click(function(){
+	var index=$('.dropdown').index(this)
+	$('.sub-nav').eq(index).toggle()
+});
+</script>                <section class="main" id="main_height">
+        	<div class="range">
+            	<div class="m-cloumn">
+                	<h3 class="club">多乐俱乐部</h3>
+                    <span>TLJ club<br/><em>会员好礼齐分享</em></span>
+                    <div class="bread cfont"><a href="index.php.htm" tppabs="http://www.tljchina.cn/index.php">首页</a> / <a href="card.php.htm" tppabs="http://www.tljchina.cn/card.php">多乐俱乐部 </a> / 会员注册</div>
+                </div>
+                
+            </div>
+            <div class="clubbox clearfix">
+				<div class="leftbox">
+                	<a href="javascript:;" class="on"><strong>SIGNUP</strong><span>注册&gt;</span></a>
+                    <a href="javascript:;"><strong>注册<br/>条款</strong></a>
+                </div>
+<!--1--> 
+                <div class="regbox" style="display:block;">
+                	<div class="regpad">
+                    	<form method="post" action="" onsubmit="return checkreg()">
+                    	<table width="100%" class="rtb">
+                        	<tr>
+                            	<td width="275"><b>*</b><div>姓名：<br/><input name="username" id="username" type="text" class="text"><br><em id="_username"></em></div></td>
+                                <td><b>*</b><div>密码：<br/><input name="pwd" id="pwd" type="password" class="text"><br><em id="_pwd"></em></div></td>
+                            </tr>
+                            <tr>
+                            	<td width="275"><b>*</b><div>手机：<br/><input name="tel" id="tel" type="text" class="text"><br><em id="_tel"></em></div></td>
+                                <td><b>*</b><div>重复密码：<br/><input name="rpwd" id="rpwd" type="password" class="text"><br><em id="_rpwd"></em></div></td>
+                            </tr>
+                        </table>
+                        <table width="100%" class="rtb">
+                        	<tr>
+                            	<td><b>*</b><div>送货地址：<br/><input name="address" id="address" type="text" class="text" style="width:474px;"><br><em id="_address"></em></div></td>
+                            </tr>
+                        </table>
+                        <table width="100%" class="rtb">
+                        	<tr>
+                            	<td width="275"><b>*</b><div>邮政编码：<br/><input name="yb" id="yb" type="text" class="text"><br><em id="_yb"></em></div></td>
+                                <td><b>*</b><div>电子邮箱：<br/><input name="email" id="email" type="text" class="text"><br><em id="_email"></em></div></td>
+                            </tr>
+
+                        </table>
+                        <table width="100%" class="rtb">
+                            <tr>
+                            	<td><label id="agree"><input id="xy" type="checkbox" class="ckbox">同意注册协议条款<em><span></span></em></label><p class="imp"><span>*</span>为必填选项</p></td>
+                            </tr>
+
+                        </table><br/>
+                        <table width="100%" class="rtb">
+                            <tr>
+                            	<td><button type="submit" name="submit" class="btn rbtn">注册 SIGNUP</button><button type="reset" class="btn rst">重新填写 REFILL</button></td>
+                            </tr>
+                        </table>
+                        </form>
+                    </div>
+                </div>
+<!--2-->                
+                <div class="regbox">
+                	<div class="regpad">
+                    	<div class="scroll">
+                    	<span style=" font-size:20px;">欢迎您注册成为多乐之日官方网站用户！</span><br/><br/>
+
+请仔细阅读下面的协议，只有接受协议才能继续进行注册。<br/>
+服务条款的确认和接纳<br/>
+多乐之日官方网站用户服务的所有权和运作权归多乐之日官方网站拥有。多乐之日官方网站所提供的服务将按照有关章程、服务条款和操作规则严格执行。用户通过注册程序点击“我同意” 按钮，即表示用户与多乐之日官方网站达成协议并接受所有的服务条款。 
+<br/>
+多乐之日官方网站服务简介<br/>
+多乐之日官方网站通过国际互联网为用户提供企业新闻及产品浏览、活动促销、门店查询和网上留言等服务。<br/>
+用户必须留意：<br/>
+
+建议提供准确的个人资料<br/> 
+用户同意遵守《中华人民共和国保守国家秘密法》、《中华人民共和国计算机信息系统安全保护条例》、《计算机软件保护条例》等有关计算机及互联网规定的法律和法规、实施办法。在任何情况下，多乐之日官方网站合理地认为用户的行为可能违反上述法律、法规，多乐之日官方网站可以在任何时候，不经事先通知终止向该用户提供服务。用户应了解国际互联网的无国界性，应特别注意遵守当地所有有关的法律和法规。<br/> 
+
+
+服务条款的修改<br/>
+多乐之日官方网站会不定时地修改服务条款，服务条款一旦发生变动，将会在相关页面上提示修改内容。如果您同意改动，则再一次点击“我同意”按钮。 如果您不接受，则及时取消您的用户使用服务资格。 
+<br/>
+服务修订<br/>
+多乐之日官方网站保留随时修改或中断服务而不需知照用户的权利。多乐之日官方网站行使修改或中断服务的权利，不需对用户或第三方负责。 
+<br/>
+用户隐私制度<br/>
+尊重用户个人隐私是多乐之日官方网站的基本政策。多乐之日官方网站不会公开、编辑或透露用户的注册信息，除非有法律许可要求，或多乐之日官方网站在诚信的基础上认为透露这些信息在以下三种情况 
+遵守有关法律规定，遵从合法服务程序。 <br/>
+保持维护多乐之日官方网站的商标所有权。<br/> 
+在紧急情况下竭力维护用户个人和社会大众的隐私安全。<br/> 
+符合其他相关的要求。  <br/>
+
+
+用户的帐号，密码和安全性<br/>
+一旦注册成功成为多乐之日官方网站用户，您将得到一个密码和帐号。如果您不保管好自己的帐号和密码安全，将对因此产生的后果负全部责任。另外，每个用户都要对其帐户中的所有活动和事件负全责。您可随时根据指示改变您的密码，也可以结束旧的帐户重开一个新帐户。用户同意若发现任何非法使用用户帐号或安全漏洞的情况，立即通知多乐之日官方网站。<br/> 
+
+免责条款<br/>
+用户明确同意网站服务的使用由用户个人承担风险。<br/> 　　 
+多乐之日官方网站不作任何类型的担保，不担保服务一定能满足用户的要求，也不担保服务不会受中断，对服务的及时性，安全性，出错发生都不作担保。用户理解并接受：任何通过多乐之日官方网站服务取得的信息资料的可靠性取决于用户自己，用户自己承担所有风险和责任。 
+<br/>
+有限责任<br/>
+多乐之日官方网站对任何直接、间接、偶然、特殊及继起的损害不负责任。<br/> 
+
+不提供零售和商业性服务 <br/>
+用户使用网站服务的权利是个人的。用户只能是一个单独的个体而不能是一个公司或实体商业性组织。用户承诺不经多乐之日官方网站同意，不能利用网站服务进行销售或其他商业用途。 
+<br/>
+用户责任<br/> 
+用户单独承担传输内容的责任。用户必须遵循：<br/> 
+从中国境内向外传输技术性资料时必须符合中国有关法规。<br/> 
+使用网站服务不作非法用途。 <br/>
+不干扰或混乱网络服务。 <br/>
+不在论坛BBS或留言簿发表任何与政治相关的信息。<br/> 
+遵守所有使用网站服务的网络协议、规定、程序和惯例。<br/> 
+不得利用本站危害国家安全、泄露国家秘密，不得侵犯国家社会集体的和公民的合法权益。 <br/>
+不得利用本站制作、复制和传播下列信息： <br/>
+煽动抗拒、破坏宪法和法律、行政法规实施的；<br/> 
+煽动颠覆国家政权，推翻社会主义制度的； <br/>
+煽动分裂国家、破坏国家统一的； <br/>
+煽动民族仇恨、民族歧视，破坏民族团结的；<br/> 
+捏造或者歪曲事实，散布谣言，扰乱社会秩序的；<br/> 
+宣扬封建迷信、淫秽、色情、赌博、暴力、凶杀、恐怖、教唆犯罪的；<br/> 
+公然侮辱他人或者捏造事实诽谤他人的，或者进行其他恶意攻击的；<br/> 
+损害国家机关信誉的； <br/>
+其他违反宪法和法律行政法规的；<br/> 
+进行商业广告行为的。<br/>
+用户不能传输任何教唆他人构成犯罪行为的资料；不能传输长国内不利条件和涉及国家安全的资料；不能传输任何不符合当地法规、国家法律和国际法 律的资料。未经许可而非法进入其它电脑系统是禁止的。若用户的行为不符合以上的条款，多乐之日官方网站将取消用户服务帐号。<br/> 
+
+
+网站内容的所有权
+<br/>多乐之日官方网站定义的内容包括：文字、软件、声音、相片、录象、图表；在广告中全部内容；电子邮件的全部内容；多乐之日官方网站为用户提供的商业信息。所有这些内容受版权、商标、标签和其它财产所有权法律的保护。所以，用户只能在多乐之日官方网站和广告商授权下才能使用这些内容，而不能擅自复制、篡改这些内容、或创造与内容有关的派生产品。 <br/>
+
+附加信息服务<br/>
+用户在享用多乐之日官方网站提供的免费服务的同时，同意接受多乐之日官方网站提供的各类附加信息服务。<br/> 
+
+解释权<br/>
+本注册协议的解释权归多乐之日官方网站所有。如果其中有任何条款与国家的有关法律相抵触，则以国家法律的明文规定为准。
+						</div>
+                        <a href="reg.php.htm" tppabs="http://www.tljchina.cn/reg.php" class="backReg">返回继续注册</a> 
+                    </div>
+                </div>
+                <a href="#" id="go_top">返回顶部</a>  
+            </div>
+        </section>
+    </div>
+<script type="text/javascript">
+$(function(){
+	$('#agree').click(function(){
+		if($('.ckbox').is(':checked')){
+			$('#agree span').show()
+		}else{
+			$('#agree span').hide()
+		}
+	});
+});
+</script>  
+<script type="text/javascript">
+$(function(){
+	$('.leftbox a').click(function(){
+		var index=$('.leftbox a').index(this)
+		$('.leftbox a').removeClass('on')
+		$('.regbox').hide()
+		$('.regbox').eq(index).show()
+		$('.leftbox a').eq(index).addClass('on')
+	});
+});
+</script>
+  	<script type="text/javascript">
+$(function(){
+var mHeight=$('#main_height').height()
+	var sHeight=$('#side_height').height()
+	if(mHeight>sHeight){
+	$('#side_height').css('min-height',mHeight-50)
+	}
+})
+$(window).scroll(function(){
+	var mHeight=$('#main_height').height()
+	var sHeight=$('#side_height').height()
+	if(mHeight>sHeight){
+	$('#side_height').css('min-height',mHeight-50)
+	}
+})
+$(function(){
+	$('#login').click(function(){
+		if($(".lobox").is(":hidden"))
+		{
+			$('#login').addClass('on')
+		}else{
+			$('#login').removeClass('on')
+		}
+        $(".lobox").toggle();
+	});
+});
+</script>
+<script type="text/javascript">
+function AddFavorite(sURL, sTitle) {             //加入收藏
+		sURL = encodeURI(sURL);
+	try{  
+		window.external.addFavorite(sURL, sTitle);  
+	}catch(e) {  
+		try{  
+			window.sidebar.addPanel(sTitle, sURL, "");  
+		}catch (e) {  
+			alert("加入收藏失败，请使用Ctrl+D进行添加,或手动在浏览器里进行设置.");
+		}; 
+	};
+};
+</script>
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F481895fdfd7902d3e3cef3777e0c254e' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<div class="quickmenus">
+	<span class="qtit"></span>
+    <div class="quickList">
+    	<ul>
+        	<li><a href="#" class="q1"></a></li>
+            <li><a href="index.php.htm" tppabs="http://www.tljchina.cn/index.php" class="q2"></a></li>
+            <li><a href="shopcar.php.htm" tppabs="http://www.tljchina.cn/shopcar.php" class="q3" ><em id="cnums">0</em></a></li>
+            <li><a href="store.php.htm" tppabs="http://www.tljchina.cn/store.php" class="q4"></a></li>
+            <li><a href="javascript:if(confirm(%27http://weibo.com/duolezhiri?c=spr_qdhz_bd_baidusmt_weibo_s&nick=  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://weibo.com/duolezhiri?c=spr_qdhz_bd_baidusmt_weibo_s&nick=%27" tppabs="http://weibo.com/duolezhiri?c=spr_qdhz_bd_baidusmt_weibo_s&nick=" target="_blank" class="q5"></a></li>
+            <li style="border:none;"><a href="#" class="q6"></a>
+            	<div class="er"><img src="images/er.jpg" tppabs="http://www.tljchina.cn/images/er.jpg"></div>
+            </li>
+        </ul>
+        
+    </div>
+</div>
+<script type="text/javascript">
+$('.q6').mouseover(function(){
+	$('.er').show()
+});
+$('.q6').mouseout(function(){
+	$('.er').hide()
+});
+</script>
+<section class="olink">
+    	<div class="link-list clearfix">
+        	<ul>
+            	<li><a href="javascript:if(confirm(%27http://www.cjfoodvillechina.com/main.asp  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.cjfoodvillechina.com/main.asp%27" tppabs="http://www.cjfoodvillechina.com/main.asp" target="_blank"><img src="images/l1.png" tppabs="http://www.tljchina.cn/images/l1.png"></a></li>
+                <li><a href="javascript:if(confirm(%27http://www.ivips.co.kr/main.asp  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.ivips.co.kr/main.asp%27" tppabs="http://www.ivips.co.kr/main.asp" target="_blank"><img src="images/l2.png" tppabs="http://www.tljchina.cn/images/l2.png"></a></li>
+                <!--<li><a href="http://www.twosome.co.kr/main.asp" target="_blank"><img src="images/l3.jpg"></a></li>-->
+                <li><a href="javascript:if(confirm(%27http://www.bibigo.co.kr/KOR/index.asp  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.bibigo.co.kr/KOR/index.asp%27" tppabs="http://www.bibigo.co.kr/KOR/index.asp" target="_blank"><img src="images/l4.png" tppabs="http://www.tljchina.cn/images/l4.png"></a></li>
+                <!--<li><a href="http://www.icoldstone.co.kr/index.asp" target="_blank"><img src="images/l5.jpg"></a></li>
+                <li><a href="http://www.chinafactory.co.kr/intro/140624/" target="_blank"><img src="images/l6.jpg"></a></li>
+                <li><a href="http://www.cheiljemyunso.co.kr/main.asp" target="_blank"><img src="images/l7.jpg"></a></li>
+                <li><a href="http://www.thesteakhouse.co.kr/index.asp" target="_blank"><img src="images/l8.jpg"></a></li>-->
+                <li><a href="javascript:if(confirm(%27http://www.twosome.co.kr/coffee/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.twosome.co.kr/coffee/%27" tppabs="http://www.twosome.co.kr/coffee/" target="_blank"><img src="images/l9.png" tppabs="http://www.tljchina.cn/images/l9.png"></a></li>
+            </ul>
+        </div>
+    </section>
+    <footer class="copyright cfont wrapper">
+    	<img src="images/minlogo.png" tppabs="http://www.tljchina.cn/images/minlogo.png">&nbsp;&nbsp;&nbsp;&nbsp;希杰多乐之日 TEL : 010-5939-6000&nbsp;&nbsp;&nbsp;&nbsp;FAX : 010-5939-6298&nbsp;&nbsp;&nbsp;&nbsp;CopyRight(C) 2012 BY 多乐之日 reserved.&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:if(confirm(%27http://www.miitbeian.gov.cn/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.miitbeian.gov.cn/%27" tppabs="http://www.miitbeian.gov.cn/" target="_blank">京ICP备 10206698号</a> 
+    </footer> 
+</body>
+</html>

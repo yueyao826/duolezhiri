@@ -1,0 +1,561 @@
+/*****Reset Css  2014.7.8 by Changl*****/
+body, dl, dd, ul, ol ,h1, h2, h3, h4 ,form, input, button, textarea, p, th, td{ margin:0; padding:0;}
+body{ font:12px/1.5 arial,"微软雅黑"; color:#333333; -background:url(../images/body.jpg)/*tpa=http://www.tljchina.cn/images/body.jpg*/ repeat; background-repeat:no-repeat!important; background-position:center top!important; background-color:#DBCFB9!important;}
+img{vertical-align: middle; border:none;}
+ul,ol{list-style:none outside none;}
+table{border-collapse:collapse; border-spacing:0;}
+button, input, select, textarea {font-size: 100%; vertical-align:middle;}
+a{ color:#333333; text-decoration:none; blr:expression(this.onFocus=this.blur());}
+a:hover{ text-decoration:none; color:#4C392E;}
+:focus {outline: 0 none;}
+h1,h2,h3{ font-size:100%; font-weight:normal}
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner{
+border:none;padding:0;
+}
+
+
+/*****common css*****/
+.wrapper{ width:1000px; margin:auto;}
+.clearfix:after{ content:"."; clear:both; height:0; visibility:hidden; display:block;}
+.clearfix{*zoom:1;}
+.text{ border:none; font-size:14px; font-family:"微软雅黑"; }
+.btn{ cursor:pointer; border:none; font-family:"微软雅黑"; }
+.btn:hover{ opacity:0.9; filter:alpha(opacity=90);}
+em{ font-style:normal;}
+.cfont{ font-family:"微软雅黑";}
+.core{color:#4c392e;}
+.book:hover,.back-list:hover,.store-lsit .detail:hover,.caroufredsel_wrapper .detail:hover,.goReg:hover,.t-goReg:hover,.ing:hover,.go-job:hover,.glist:hover{ opacity:0.9; filter:alpha(opacity=90);}
+
+
+
+.i-header{ width:1000px; margin:auto; height:42px;}
+.topTex{ float:left; padding:18px 0 0 0; font-size:0;}
+.top-link{ float:right; color:#4c392e; font-size:15px; height:26px; line-height:24px; padding-top:8px;}
+.top-link .dlz{ background:url(../images/ico1.png)/*tpa=http://www.tljchina.cn/images/ico1.png*/ no-repeat left; padding-left:22px; margin:0 18px;}
+.ibody{ background:url(../images/headbg.png)/*tpa=http://www.tljchina.cn/images/headbg.png*/ no-repeat center top; width:1024px; height:477px; position:relative; margin:auto; padding-top:93px;}
+.i-left{ background:url(../images/bg3.jpg)/*tpa=http://www.tljchina.cn/images/bg3.jpg*/ no-repeat; width:211px; height:540px; position:absolute; left:14px; top:25px;}
+.i-main{ background:#97a994; height:472px; margin:0 9px 0 14px; width:1001px;}
+.hb{ float:left;position:relative;}
+#login{ width:30px; height:24px; display:inline-block; padding:2px 18px 0; color:#4c392e;}
+.lobox{ width:300px; height:285px; background:#fff; position:absolute; left:0; top:26px; display:none; z-index:9999;}
+.top-link #login.on{ color:#A8BE7D; background:#fff; }
+.pad{ padding:30px;}
+.top-link .lt{ color:#4c392e; font-size:14px; line-height:20px;}
+.t-user-ipt span{ background:url(../images/t-psd.jpg)/*tpa=http://www.tljchina.cn/images/t-psd.jpg*/ no-repeat; width:38px; height:35px; float:left;}
+.lobox .text{ height:17px; line-height:17px; padding:8px 0; width:200px; border:1px solid #a59c96; border-left:none;}
+.t-user-psw span{ background:url(../images/t-user.jpg)/*tpa=http://www.tljchina.cn/images/t-user.jpg*/ no-repeat; width:38px; height:35px; float:left;}
+.t-user-ipt,.t-user-psw{ margin-top:10px; height:37px;}
+.t-btns{ height:38px; margin-top:15px;}
+.t-btns .btn{ width:175px; height:38px; background:#A8BE7D; color:#4c392e; font-size:16px; float:left;}
+.t-goReg{ background:url(../images/reg.gif)/*tpa=http://www.tljchina.cn/images/reg.gif*/ no-repeat; width:55px; height:38px; float:right;}
+.hz-login{ text-align:right; padding-top:15px;}
+.xl-hz{ background:url(../images/xl.gif)/*tpa=http://www.tljchina.cn/images/xl.gif*/ no-repeat;}
+.qq-hz{ background:url(../images/qq.png)/*tpa=http://www.tljchina.cn/images/qq.png*/ no-repeat; width:32px;}
+.hz-login a{ width:31px; height:31px; display:inline-block; margin-left:8px;}
+.dlz,.ctc{ float:left; margin-left:18px;}
+.top-link em{ float:left;}
+
+
+
+.slide-box{ width:782px; height:348px; background:#fff; float:right;}
+.slide{ padding:5px 0 5px 5px; width:777px;}
+.slide-img{ float:left; width:600px; height:340px; position:relative;}
+.slide-img li{ width:600px; height:340px; position:absolute; left:0; top:0;}
+.small{ width:170px; float:right;}
+.small li img{ border:2px solid #fff;}
+.small li{background:url(../images/h0.gif)/*tpa=http://www.tljchina.cn/images/h0.gif*/ no-repeat left bottom; width:170px; height:67px; cursor:pointer;}
+.small li.on{ background:#dfd3bb}
+.hotArea{ float:right; width:782px; background:#fff;}
+.hotArea .block{ float:left;}
+
+.block h3{ height:24px; background:#4c392e; line-height:24px; font-size:14px; color:#A8BE7D; text-indent:12px;}
+.block img{ width:255px; height:100px;}
+.i-hot,.i-recom { margin-left:8px; _display:inline;}
+.rb{ background:url(../images/rb.gif)/*tpa=http://www.tljchina.cn/images/rb.gif*/ no-repeat; width:7px; height:3px; position:absolute; right:-7px; bottom:0;}
+
+.olink{ background:url(../images/bg2.png)/*tpa=http://www.tljchina.cn/images/bg2.png*/ no-repeat; width:1042px; margin:auto; overflow:hidden;}
+.link-list{ margin-top:43px; overflow:hidden; background:#f3f3f3; }
+.link-list li{ float:left; padding:3px 15px 7px;}
+.link-list li img{ height:30px;}
+.copyright{ height:25px; line-height:16px; color:#727171; font-size:11px; padding-top:10px;}
+.copyright a{color:#727171;}
+
+
+.navbox{ padding:10px 8px; height:516px; width:191px;}
+.navbox h2{ text-align:center; padding-top:40px; font-size:0;}
+.i-nav{ padding:35px 5px 0 5px; width:181px;}
+.i-nav li{ border-bottom:1px solid #e7efe6;}
+.i-nav li a{ font-size:14px; color:#4c392e; background:url(../images/nav.jpg)/*tpa=http://www.tljchina.cn/images/nav.jpg*/ no-repeat; display:block; height:49px; width:175px; text-indent:-9999px; font-size:0;}
+.i-nav li a:hover{ background:url(../images/nav-hover.jpg)/*tpa=http://www.tljchina.cn/images/nav-hover.jpg*/ no-repeat;}
+.i-nav li .a1{ background-position:0 0;}
+.i-nav li .a2{ background-position:0 -52px;}
+.i-nav li .a3{ background-position:0 -103px;}
+.i-nav li .a4{ background-position:0 -153px;}
+.i-nav li .a5{ background-position:0 -203px;}
+.i-nav li .a6{ background-position:0 -254px;}
+.i-nav li .a7{ background-position:0 -304px;}
+
+.i-nav li .a1:hover{ background-position:0 0;}
+.i-nav li .a2:hover{ background-position:0 -52px;}
+.i-nav li .a3:hover{ background-position:0 -103px;}
+.i-nav li .a4:hover{ background-position:0 -153px;}
+.i-nav li .a5:hover{ background-position:0 -203px;}
+.i-nav li .a6:hover{ background-position:0 -254px;}
+.i-nav li .a7:hover{ background-position:0 -304px;}
+
+.ann{ width:500px; height:673px; background:#fef7da; position:absolute; left:50%; margin-left:-250px; top:50%; margin-top:-335px; z-index:99999; display:none;}
+.floatBox{ width:600px; height:338px; position:absolute; left:50%; margin-left:-300px; top:50%; margin-top:-169px; z-index:9999; display:none;}
+.dianq{ text-align:center; padding-top:10px;}
+.hh{ width:60px; height:28px; display:block; position:absolute; left:239px; top:165px;}
+#t9{display:block; width:60px; height:28px; opacity:0; filter:alpha(opacity=0);}
+/*#close{ background:url(../images/close.png) no-repeat; width:37px; height:36px; position:absolute; top:10px; right:10px;}*/
+#close,#close2{ font-size:16px; position:absolute; right:15px; top:10px;}
+.iTex{ padding:50px 20px 20px 20px;}
+.quickmenus{position:fixed; left:50%; margin-left:580px; top:137px; width:70px; z-index:999; _position:absolute;}
+.qtit{ background:url(../images/f0.gif)/*tpa=http://www.tljchina.cn/images/f0.gif*/ no-repeat center top; width:70px; height:21px; display:block;}
+.quickList{ width:63px; margin:auto; background:#f8f7f3; text-align:center; padding-bottom:10px;}
+.quickList li { border-bottom:1px solid #bdaf94; height:58px; position:relative; width:53px;}
+.quickList ul{ padding:0 5px;}
+
+.iTab{ padding-bottom:10px;}
+.iTab ul{ padding:10px 0 0 90px;}
+.iTab li{ color:#5E4C3E; margin-bottom:10px; font-size:14px;}
+.iTab .text{ width:310px; height:20px; line-height:20px; padding:5px; border:1px solid #9c8f79; background:none;}
+.stj{ text-align:center; font-size:14px; color:#8a6d4b;}
+.stj .btn{ background:url(../images/btn0.jpg)/*tpa=http://www.tljchina.cn/images/btn0.jpg*/ no-repeat; width:163px; height:43px;}
+.blogo{ background:url(../images/0a.jpg)/*tpa=http://www.tljchina.cn/images/0a.jpg*/ no-repeat 50% 50% #b1d3bb; height:85px;}
+
+/*.quickList li a{ background:url(../images/f1.png) no-repeat; display:inline-block; width:52px; height:58px;}
+
+.quickList li .q1{ background-position:0 15px; height:52px;}
+.quickList li .q2{ background-position:0 -36px;}
+.quickList li .q3{ background-position:0 -84px;}
+.quickList li .q4{ background-position:0 -134px;}
+.quickList li .q5{ background-position:0 -184px;}
+.quickList li .q6{ background-position:0 -234px;}
+.quickList li a:hover{ background:url(../images/hover-f0.png) no-repeat; height:52px; transition:background 0.2s linear 0s;}
+.quickList li .q1:hover{ background-position:5px 15px;}
+.quickList li .q2:hover{ background-position:6px -36px;}
+.quickList li .q3:hover{ background-position:5px -91px;}
+.quickList li .q4:hover{ background-position:5px -143px;}
+.quickList li .q5:hover{ background-position:5px -202px;}
+.quickList li .q6:hover{ background-position:5px -257px;}*/
+.quickList li a,.quickList li a:hover{ background:url(../images/makst.png)/*tpa=http://www.tljchina.cn/images/makst.png*/ no-repeat; height:58px; width:43px; display:inline-block; -webkit-transition:all 0.2s linear 0s; transition:all 0.2s linear 0s;}
+.quickList li .q1{ background-position:0 20px;}
+.quickList li .q2{ background-position:0 -107px;}
+.quickList li .q3{ background-position:0 -227px;}
+.quickList li .q4{ background-position:0 -346px;}
+.quickList li .q5{ background-position:0 -466px;}
+.quickList li .q6{ background-position:0 -586px; position:absolute; left:7px; top:0; z-index:9}
+.quickList li .q1:hover{ background-position:0 -40px;}
+.quickList li .q2:hover{ background-position:0 -166px;}
+.quickList li .q3:hover{ background-position:0 -285px;}
+.quickList li .q4:hover{ background-position:0 -406px;}
+.quickList li .q5:hover{ background-position:0 -526px;}
+.quickList li .q6:hover{ background-position:0 -646px;}
+.quickList li .q3 em{ width:20px; height:20px; background:#f6a54b; color:#fff; -webkit-border-radius:20px; border-radius:20px; text-align:center; line-height:20px; display:block; position:absolute; right:2px; top:8px;}
+.er{ display:none; position:absolute; left:-36px; top:0; height:265px; background:#faf9f5; z-index:0; overflow:hidden;}
+.er img{ margin-top:62px;}
+
+
+
+
+
+
+
+
+.header{ height:56px; width:1000px; margin:auto;}
+.header h1{ padding-top:5px; font-size:0; float:left;}
+.ledge{ background:url(../images/ledge.png)/*tpa=http://www.tljchina.cn/images/ledge.png*/ no-repeat; width:1044px; height:93px; margin:auto;}
+.banner,.banner img{ width:1000px; height:180px;}
+
+.left-side{ width:205px; height:100%; float:left; background:url(../images/bg5.png)/*tpa=http://www.tljchina.cn/images/bg5.png*/ no-repeat bottom; padding-bottom:30px;}
+.eg{ background:url(../images/bg4.jpg)/*tpa=http://www.tljchina.cn/images/bg4.jpg*/ repeat-y; padding-bottom:1px; overflow:hidden;}
+.nav{ padding:0; margin:8px; border:2px solid #e0e9de; width:172px; overflow:hidden;}
+.nav ul{ padding:0 5px;}
+.nav .sub-nav a{ background:none; height:22px; line-height:22px; font-size:12px; text-indent:54px; color:#4c392e;}
+.nav .sub-nav li{ border-bottom:none; margin-bottom:4px;}
+.nav .sub-nav .on{ background:url(../images/m-hover.png)/*tpa=http://www.tljchina.cn/images/m-hover.png*/ no-repeat; width:155px; height:22px; color:#A8BE7D;}
+.nav .sub-nav a:hover{ background:none; color:#4c392e;}
+.sub-nav{ display:none;}
+.main{ width:795px; background:#fff; float:left; min-height:500px;}
+.range{ padding:30px 25px 0;}
+.m-cloumn{ height:45px; border-bottom:3px solid #8A7149; margin-bottom:20px;}
+.m-cloumn h3{ float:left; font-size:28px; color:#4c392e; background:url(../images/c-ico1.png)/*tpa=http://www.tljchina.cn/images/c-ico1.png*/ no-repeat left; padding-left:35px; height:32px; line-height:32px; border-right:2px solid #A8BE7D; padding-right:10px;}
+.m-cloumn span{ float:left; margin-left:10px; color:#A8BE7D; font-size:17px; line-height:15px;}
+.m-cloumn em{ font-size:12px;}
+.bread{ float:right; font-size:14px; color:#4c392e; padding:22px 0 0 0;}
+
+.list{ width:745px; overflow:hidden; padding:0 0 100px; position:relative; min-height:400px;}
+.product-list{border-left:1px solid #999999; border-top:1px solid #999999; margin-bottom:40px;}
+.product-list li{ float:left; overflow:hidden; background:#f7f7f7; border-bottom:1px solid #999999; border-right:1px solid #999999; height:270px; width:185px; position:relative;}
+.product-list li .p-img{ display:block;height:205px; width:185px; overflow:hidden;}
+.product-list li img{ width:185px; height:205px; /*-ms-transition:all 0.2s linear 0s; -webkit-transition:all 0.2s linear 0s; -moz-transition:all 0.2s linear 0s; transition:all 0.2s linear 0s;*/}
+.product-list .hot-p{ width:371px; height:270px;}
+.product-list .hot-p img{ width:381px; height:270px;}
+.product-list h3{ padding-left:10px; height:26px; line-height:26px;}
+.product-list h3 a{ font-size:16px; color:#595757;}
+.product-list li strong{ font-size:25px; color:#5E4B3D; font-family:"微软雅黑"; margin-left:10px;}
+.book{ background:url(../images/book.png)/*tpa=http://www.tljchina.cn/images/book.png*/ no-repeat; width:58px; height:19px; float:right; font-size:0; text-indent:-9999px; margin:10px 8px 0 0;}
+.product-list .detail{ display:block; height:270px; width:185px; background:#A8BE7D; background:rgba(195,218,189,0.9); filter:alpha(opacity=90); position:absolute; left:0; top:0; text-align:center; display:none;}
+.product-list .detail em{ background:url(../images/ico8.png)/*tpa=http://www.tljchina.cn/images/ico8.png*/ no-repeat top; padding-top:55px; margin-top:96px; display:inline-block; color:#4c392e; font-size:16px;}
+/*.product-list li .p-img:hover img,.hot-p a:hover img{ -ms-transform:translate(-10px,0); -webkit-transform:translate(-10px,0); -moz-transform:translate(-10px,0); transform:translate(-10px,0);}*/
+.product-list .new{ background:url(../images/new.png)/*tpa=http://www.tljchina.cn/images/new.png*/ no-repeat; width:31px; height:34px; position:absolute; left:8px; top:0;}
+.product-list .on .detail{ display:block;}
+
+.pages{ height:29px; line-height:29px; text-align:center;} 
+.pages a,.pages em{ display:inline-block; padding:0 12px; color:#fff; background:#A8BE7D; font-family:"宋体"; font-weight:700;}
+.pages a:hover{ background:#f69823; color:#fff;}
+.pages em{ font-family:Arial;}
+.pages .up{ background:url(../images/sj1.png)/*tpa=http://www.tljchina.cn/images/sj1.png*/ no-repeat 10px 10px #9fa0a0; padding:0 5px 0 17px;}
+.pages .down{  background:url(../images/sj2.png)/*tpa=http://www.tljchina.cn/images/sj2.png*/ no-repeat 62px 10px #9fa0a0; padding:0 22px 0 0; text-indent:10px;}
+.pages .up:hover{background:url(../images/sj1.png)/*tpa=http://www.tljchina.cn/images/sj1.png*/ no-repeat 10px 10px #4c392e;}
+.pages .down:hover{ background:url(../images/sj2.png)/*tpa=http://www.tljchina.cn/images/sj2.png*/ no-repeat 62px 10px #4c392e;}
+.pages .up,.pages .down{width:55px; height:29px;}
+.pages .cur{ background:#f69823; color:#fff;}
+
+#go_top{ background:url(../images/gotop.png)/*tpa=http://www.tljchina.cn/images/gotop.png*/ no-repeat center 49% #656d75; width:41px; height:38px; display:block; position:absolute; right:25px; bottom:0; font-size:0; text-indent:-9999px;-webkit-transition:all 0.2s linear 0s; transition:all 0.2s linear 0s;}
+#go_top:hover{background:url(../images/gotop.png)/*tpa=http://www.tljchina.cn/images/gotop.png*/ no-repeat center 49% #a8be7d; }
+
+.pleft{ float:left; width:350px;}
+.p-infor-img{ width:350px; height:300px;}
+.mark{ height:24px;}
+.mark a{ background:url(../images/bad.png)/*tpa=http://www.tljchina.cn/images/bad.png*/ no-repeat; width:22px; height:20px; display:inline-block; float:left; border:none; margin-right:8px; font-size:0; text-indent:-9999px;}
+.mark .on a{ background:url(../images/good.png)/*tpa=http://www.tljchina.cn/images/good.png*/ no-repeat;}
+#star{ padding-left:30px;}
+#star span{ float:left; color:#4c392e ; font-size:14px; margin-right:4px;}
+#star ul{ float:left; padding-top:2px;}
+#star ul li{ float:left;}
+.pright{ width:390px; float:left; }
+.dg-name h3{font-size:24px; line-height:22px; float:left; padding-left:5px;}
+.dg-name h3 em{ font-size:12px;}
+.dg-name{ height:56px; border-bottom:1px solid #c9caca; margin-bottom:15px;}
+.price{ float:right; font-size:14px; padding:12px 15px 0 0;}
+.price strong{ font-size:28px; color:#f8a74b;}
+.product-box{ padding-bottom:10px; border-bottom:1px solid #c9caca;}
+.item{ width:400px; font-size:14px; color:#4c392e; line-height:28px; margin-bottom:8px; padding-left:10px;}
+.item span{ float:left; margin-right:4px;}
+.item .fl{ float:left; width:300px;}
+.stars{ padding-top:4px;}
+.amount { padding-top:4px;}
+.amount .text{ height:19px; line-height:19px; border:1px solid #9fa0a0; text-align:center; width:30px; float:left; color:#f8a74b; font-weight:700;}
+.amount em{ width:19px; height:19px; line-height:19px; text-align:center; border-width:1px 1px 1px 0; border-color: #9fa0a0; border-style:solid; float:left; cursor:pointer;}
+.smt{ background:url(../images/btn1.png)/*tpa=http://www.tljchina.cn/images/btn1.png*/ no-repeat; width:114px; height:36px; float:right; visibility:hidden;}
+.article{ width:705px; overflow:hidden; font-size:14px; padding:0 20px;}
+.article img{ max-width:705px;}
+
+.m-cloumn .store{ background:url(../images/c-ico2.png)/*tpa=http://www.tljchina.cn/images/c-ico2.png*/ no-repeat left;}
+.map{ margin-bottom:30px; width:745px; height:400px; background:#ebf2e6; border:1px solid #c9caca;}
+.map img{ max-width:744px;}
+.china{ float:left; padding:10px 0 0 10px; width:457px; height:377px;}
+.store-lsit{ margin-bottom:40px;}
+.store-lsit th{ height:38px; background:#4c392e; color:#fff; font-weight:normal; font-family:'华文细黑'; font-size:13px; }
+.store-lsit td{ text-align:center; height:75px; border-bottom:1px solid #a69c97;}
+.store-lsit .detail{ background:#A8BE7D; color:#4c392e; display:inline-block; width:80px; height:30px; line-height:30px; text-align:center;}
+.slt{ float:right; width:240px; padding-top:15px;}
+.slt p{ margin-bottom:5px;}
+.select_box{ margin-top:15px; width:240px; height:33px; position:relative; color:#4c392e}
+.select_box input{ background:url(../images/s4.gif)/*tpa=http://www.tljchina.cn/images/s4.gif*/ no-repeat; width:190px; height:33px; line-height:33px; padding-left:10px; cursor:pointer; color:#4c392e;}
+.select_ul{ display:none; position:absolute; left:0; top:32px; width:198px; z-index:999; background:#DFEDC8; border:1px solid #7d8666;}
+.select_ul li{ height:32px; line-height:32px; text-indent:10px;}
+.select_ul li a{ display:block; color:#4c392e;}
+.select_ul li a:hover{ background:#A8BE7D; color:#fff;}
+.query{ width:130px; height:28px; color:#4c392e; background:#A8BE7D; margin-top:30px;}
+
+.zoombox{width:320px; float:left;}
+.zoompic{width:320px; height:200px; margin-bottom:10px; border:1px solid #d1d4d1;}
+.zoompic img{ width:320px; height:200px;}
+.sliderbox{height:56px;overflow:hidden; width:320px; position:relative;}
+.arrow-btn{ display:none;}
+.slider{float:left; height:56px;width:320px;position:relative;overflow:hidden;display:inline;}
+.slider ul{position:absolute;left:0;width:999em;}
+.slider li{float:left;width:81px;height:56px;text-align:left;}
+.slider li img{ width:70px; height:50px; border:3px solid #ccc;}
+.zoompic img{ max-width:320px; }
+.slider li em{ display:block; width:102px; height:102px; background:#9f9f9f; position:absolute; left:0; top:0; z-index:9; opacity:0.8; filter:alpha(opacity=80); display:none;}
+.slider li span{ font-size:20px; width:25px; z-index:10; color:#fff; position:absolute; left:40px; top:4px;display:none;}
+.sliderbox .slider .current img{ border:3px solid #f08300;}
+
+.m-ir{ width:400px; float:right;}
+.m-i-name{ height:32px; margin-bottom:5px;}
+.m-i-name span{ font-size:20px; color:#4c392e; float:left;}
+.share{ background:url(../images/share.png)/*tpa=http://www.tljchina.cn/images/share.png*/ no-repeat; width:128px; height:30px; float:right;}
+.tab-item{ border-top:1px solid #4c392e; margin-bottom:25px;}
+.tab-item .i1{ background:url(../images/i1.png)/*tpa=http://www.tljchina.cn/images/i1.png*/ no-repeat 50% 50% #f5f0ea;}
+.tab-item span{ float:left; width:55px; height:45px; font-size:0; text-indent:-9999px;}
+.tab-item li{ overflow:hidden; zoom:1; border-bottom:1px solid #cfd0d0;}
+.tab-item .i2{ background:url(../images/i2.png)/*tpa=http://www.tljchina.cn/images/i2.png*/ no-repeat 50% 50% #f5f0ea;}
+.tab-item .i3{ background:url(../images/i3.png)/*tpa=http://www.tljchina.cn/images/i3.png*/ no-repeat 50% 50% #f5f0ea;}
+.mx{ padding-left:15px; width:320px; height:45px; display:table-cell; vertical-align:middle; *float:left; *margin-top:10px; *height:auto;}
+.back-list{ width:110px; height:30px; line-height:30px; text-align:center; float:left; background:#A8BE7D;}
+.btns{ float:right;}
+.btns a{ background:url(../images/btn2.png)/*tpa=http://www.tljchina.cn/images/btn2.png*/ no-repeat; height:24px; width:24px; float:left;}
+.btns a:hover{ background:url(../images/btn2-2.png)/*tpa=http://www.tljchina.cn/images/btn2-2.png*/ no-repeat;}
+.btns .lbtn{ background-position:0 0;}
+.btns .rbtn{ background-position:-24px 0;}
+.btns .lbtn:hover{ background-position:0 0;}
+.btns .rbtn:hover{ background-position:-24px 0;}
+.m-intro { margin-bottom:25px;}
+.dz{ border:3px solid #f08300; margin:auto; width:738px; overflow:hidden;}
+.m-cloumn .act{ background:url(../images/c-ico3.png)/*tpa=http://www.tljchina.cn/images/c-ico3.png*/ no-repeat left;}
+
+.n-product-list li{ height:245px; margin-bottom:15px;}
+.n-product-list li .fl{ float:left; background:#363B41;}
+.n-product-list li .fr{ float:right;}
+.s-img,.s-img img{ width:245px; height:245px; overflow:hidden; text-align:center;}
+.b-img,.b-img img{ width:495px; height:245px; overflow:hidden; cursor:pointer; position:relative;}
+.hide-intro{ background:url(../images/png1.png)/*tpa=http://www.tljchina.cn/images/png1.png*/ no-repeat; width:254px; height:245px; position:absolute; right:0; top:0; display:none; }
+
+.new-pages{ height:87px;}
+.new-pages a,.new-pages span{ display:inline-block;width:245px; height:87px; float:left;} 
+.new-pages .up{ background:url(../images/pup.gif)/*tpa=http://www.tljchina.cn/images/pup.gif*/ no-repeat 50% 50% #ededed; }
+.new-pages .down{ background:url(../images/pup2.gif)/*tpa=http://www.tljchina.cn/images/pup2.gif*/ no-repeat 50% 50% #ededed; }
+.new-pages .up:hover{background:url(../images/pup.png)/*tpa=http://www.tljchina.cn/images/pup.png*/ no-repeat 50% 50% #A8BE7D;}
+.new-pages .down:hover{background:url(../images/pdown.png)/*tpa=http://www.tljchina.cn/images/pdown.png*/ no-repeat 50% 50% #A8BE7D;}
+.new-pages span{ font-size:28px; color:#000000; font-family:"微软雅黑"; text-align:center;line-height:87px; background:#ededed; margin:0 5px;}
+
+.woo{ width:240px; overflow:hidden; border:1px solid #cfcfcf; margin-bottom:15px;}
+.stroy-img img,.stroy-img{ width:240px;}
+.uArea{ padding:10px; width:215px;}
+.address{ background:url(../images/ico1.png)/*tpa=http://www.tljchina.cn/images/ico1.png*/ no-repeat left top; padding-left:25px; display:block; font-size:16px; min-height:24px; margin-bottom:8px;}
+.photo{ float:left;}
+.author{ overflow:hidden; zoom:1; padding-top:8px; border-top:1px solid #e7e7e7;}
+.author h3{ float:left; padding-left:15px; width:165px; font-size:14px;}
+.item_list{ margin-bottom:10px; width:780px; overflow:hidden; position:relative;}
+.shareul{ float:left; margin-right:8px;}
+.shareul li{border: 1px solid #cfcfcf;
+    margin-bottom: 15px;
+    overflow: hidden;
+    width: 240px;}
+.demo{ width:745px; overflow:hidden;}	
+.top-activity{ height:240px; margin-bottom:10px;}
+.top-activity div{ float:left; _display:inline;}
+.ta1,.ta1 img,.act-list li img{ width:240px; height:240px;}
+.ta2,.ta2 img{ width:495px; height:240px;}
+.ta2 { margin-left:10px;}
+.act-list { width:750px; margin-bottom:30px; height:750px; overflow:hidden; position:relative;}
+.act-list .ra{ display:block; overflow:hidden; width:240px;  height:240px;}
+.act-list li { float:left; width:240px; height:240px; margin:0 10px 10px 0; position:relative; overflow:hidden;}
+.act-list li .more .bds_more{ background:url(../images/btn3.png)/*tpa=http://www.tljchina.cn/images/btn3.png*/ no-repeat; width:29px; height:30px; position:absolute; right:7px; bottom:7px; z-index:5; padding:0; margin:0;}
+.act-list .more-act{ background:#A8BE7D; width:240px; height:240px; right:0; bottom:-240px; position:absolute; z-index:3; color:#4c392e; overflow:hidden;}
+.end{ background:#000; background:rgba(0,0,0,0.6); filter:alpha(opacity=60); position:absolute; left:0; bottom:-240px; width:240px; height:240px; text-align:center;}
+.end em{ background:url(../images/end.png)/*tpa=http://www.tljchina.cn/images/end.png*/ no-repeat center 50%; height:52px; display:block; margin-top:20px; padding-top:110px; color:#fff; font-size:16px;}
+.goT{ text-align:center; padding-top:30px; overflow:hidden; zoom:1;}
+.goT .glist{ width:110px; height:30px; line-height:30px; float:left; margin-left:320px;display:inline-block; background:#a8be7d;}
+#loader{ opacity:0; filter:alpha(opacity=0); text-align:center;}
+#btnTest{ position:absolute; right:10px; bottom:10px; cursor:pointer; z-index:99}
+#btnTest img{ width:240px; height:240px;}
+
+.arar-block{ height:100px; margin-bottom:10px;}
+.dq{ width:240px; height:100px; background:#A8BE7D; float:left;}
+.dq span{ font-size:40px; color:#fff; margin-left:10px;}
+.dq strong{ font-size:20px; color:#4c392e; margin-left:10px;}
+
+.select-area{ width:495px; height:100px; background:#A8BE7D; float:right;}
+.citys{ float:left; font-size:40px; color:#fff; line-height:30px; margin:20px 0 0 20px; text-align:center;}
+.citys em{ font-size:20px;}
+.cd-dropdown{ float:right; width:242px; position:relative; padding:32px 20px 0 0;}
+.cd-dropdown .dp{ background:url(../images/select.png)/*tpa=http://www.tljchina.cn/images/select.png*/ no-repeat; width:242px; height:40px; display:block; font-size:14px; line-height:40px; color:#4c392e; cursor:pointer;}
+.cd-dropdown .dp{ background-position:0 0;}
+.cd-active .dp{ background-position:0 -40px;}
+.cd-dropdown ul{ position:absolute; left:0; top:40px; background:#dfedc8; width:240px; border:1px solid #7d8666; display:none;}
+.cd-dropdown li{ height:40px; line-height:40px; font-size:14px; text-indent:15px; cursor:pointer;}
+.cd-dropdown li:hover{ background:#A8BE7D;}
+
+.search-list{ background:#8A7149; padding:20px; font-size:36px; color:#fff;}
+.m-cloumn .club{ background:url(../images/c-ico4.png)/*tpa=http://www.tljchina.cn/images/c-ico4.png*/ no-repeat left;}
+.foodMaster{ background:#EEE0B1; height:280px; overflow:hidden; margin-bottom:20px;}
+.clubbox{ width:100%; padding-bottom:100px; position:relative; min-height:400px;}
+
+#carousel{ position:relative; height:204px; width:795px; margin-top:34px;}
+.caroufredsel_wrapper{ height:204px; position:relative; width:470px; overflow:hidden; float:right; margin-right:45px; _display:inline;}
+.caroufredsel_wrapper li{ width:150px; background:#dfe2d7; height:204px; float:left; text-align:center; overflow:hidden; margin-right:10px; _display:inline;}
+.caroufredsel_wrapper ul{ width:800px;}
+.u-photo{ display:block; margin-top:8px;}
+.morning{ padding:0 10px; height:20px; line-height:20px; overflow:hidden; color:#4c392e;}
+.caroufredsel_wrapper p{ height:20px; line-height:20px; height:60px; overflow:hidden; margin-bottom:4px; padding:0 10px; text-align:left;}
+.caroufredsel_wrapper .detail{ width:88px; height:18px; line-height:18px; background:#4c392e; color:#fff; display:inline-block;}
+.prev,.next{ background:url(../images/btn4.png)/*tpa=http://www.tljchina.cn/images/btn4.png*/ no-repeat; width:38px; height:38px; position:absolute; top:74px;}
+#carousel .prev{ background-position:0 0; left:5px;}
+#carousel .next{ background-position:-38px 0; right:5px;}
+
+.lv{ background:#EEE0B1; width:100%; padding:10px 0 20px; margin-bottom:20px;}
+.left-b{ width:200px; float:left; padding-left:40px;}
+.card-cloumn{ height:37px; overflow:hidden; background:#A8BE7D;}
+.card-cloumn strong{ color:#fff; font-size:24px; margin-left:15px; float:left;}
+.card-cloumn .core{ color:#4c392e;}
+.card-cloumn b{ color:#fff; font-size:18px; margin:5px 0 0 5px; float:left;}
+.card-show{ text-align:center; padding-top:15px;}
+.card-show img{ width:160px;}
+.right-b{ float:left; width:515px; margin-left:15px; _display:inline;}
+.right-b .intro{ font-size:14px; padding:15px 0 0 10px;}
+.card-cloumn .ov{ line-height:16px; margin-top:2px;}
+.ps{ font-size:16px; color:#9fa0a0; padding:0 20px 0 40px;}
+.d-list{ padding:0 20px 100px ; width:705px;}
+.coupon{ width:800px; margin-bottom:40px;}
+.coupon-pic{ width:330px; height:160px; margin-bottom:15px;}
+.coupon-pic img{ width:330px; height:160px;}
+.coupon-pic a{ display:block; width:330px; height:160px; overflow:hidden; position:relative;}
+.coupon-pic h3{ height:70px; background:#000; background:rgba(0,0,0,0.5); filter:alpha(opacity=50); width:330px; position:absolute; left:0; bottom:-70px; color:#f6a54b; overflow:hidden; text-align:right;}
+.coupon-pic h3 strong{ font-size:24px; margin-right:10px; position:relative;}
+.coupon-pic h3 em{ font-size:54px;}
+.print{ display:block; height:38px; color:#595757; line-height:38px; background:#b5b5b6; text-align:right;}
+.coupon li{ float:left; width:330px; margin:25px 45px 0 0; _display:inline;}
+.print em{ background:url(../images/print.png)/*tpa=http://www.tljchina.cn/images/print.png*/ no-repeat left; padding-left:38px; font-size:24px; margin-right:10px;}
+.print:hover{ background:#f6a54b; color:#000;}
+.d-list .new-pages a,.d-list .new-pages span{ width:231px;}
+
+.user-ipt,.user-psw{ height:28px;}
+.user-ipt .text,.user-psw .text{ height:16px; line-height:16px; padding:5px 0; border:1px solid #9e978c; width:148px; float:left; background:none; border-left:none; background:#F0F6EB;}
+.user-ipt span{ background:url(../images/user-ico.gif)/*tpa=http://www.tljchina.cn/images/user-ico.gif*/ no-repeat; width:30px; height:28px; float:left;}
+.user-psw span{ background:url(../images/psd-ico.gif)/*tpa=http://www.tljchina.cn/images/psd-ico.gif*/ no-repeat; width:30px; height:28px; float:left;}
+.int-search .btn{ width:68px; height:68px; background:#A8BE7D; color:#4c392e;}
+div .goReg{ background:#5e5f5d; width:85px; height:28px; line-height:28px; text-align:center; display:block; color:#fff;}
+.int-search .sinaLogin{ background:url(../images/xl.gif)/*tpa=http://www.tljchina.cn/images/xl.gif*/ no-repeat #ec8180; line-height:31px; overflow:hidden; color:#fff; text-indent:35px; width:31px; height:31px; display:inline-block; -webkit-transition:width 0.2s ease-in 0s; transition:width 0.2s ease-in 0s; float:left;}
+.int-search .sinaLogin:hover{ width:125px;}
+.int-search .qqLogin{ background:url(../images/qq.png)/*tpa=http://www.tljchina.cn/images/qq.png*/ no-repeat #6dabde; width:32px; height:31px; display:inline-block; margin-left:10px; overflow:hidden; color:#fff; text-indent:38px; line-height:31px;-webkit-transition:width 0.2s ease-in 0s; transition:width 0.2s ease-in 0s; float:left;}
+.int-search .qqLogin:hover{ width:125px;}
+.int-search{ padding-top:10px;}
+
+.m-cloumn .abt{ background:url(../images/c-ico5.png)/*tpa=http://www.tljchina.cn/images/c-ico5.png*/ no-repeat left;}
+.th{ height:36px; line-height:36px; overflow:hidden; background:#A8BE7D; color:#4c392e; font-size:20px;}
+.th strong{ float:left; margin-left:30px;}
+.th b{ float:right; margin-right:30px;}
+.news-list{ margin-top:10px; margin-bottom:30px;}
+.news-list li{ height:48px; line-height:48px; overflow:hidden; vertical-align:bottom; font-size:15px; border-bottom:1px dashed #d1e2cc;}
+.news-list a{ float:left; color:#4c392e; margin-left:30px;}
+.news-list span{ float:right; margin-right:28px; font-family:'微软雅黑';}
+
+.news-title{ padding-bottom:10px; border-bottom:1px dashed #d1e2cc; overflow:hidden; zoom:1; position:relative; margin-bottom:20px;}
+.news-title h1{ color:#4c392e; font-size:24px; font-weight:700; width:480px; float:left; padding-left:20px;}
+.news-title .amt{ position:absolute; right:10px; bottom:5px;color:#4c392e; font-size:14px;}
+.myshare-2 { height:45px; margin-top:-5px;}
+.myshare-1{ float:right; height:36px; overflow:hidden; margin-top:-7px;}
+.bdsharebuttonbox{ float:right; width:182px;}
+.myshare .bdsharebuttonbox a{ background:url(../images/share.png)/*tpa=http://www.tljchina.cn/images/share.png*/ no-repeat; width:30px; height:32px;}
+.myshare .bdsharebuttonbox .bds_weixin{ background-position:0 0;}
+.myshare .bdsharebuttonbox .bds_tsina{ background-position:-33px 0;}
+.myshare .bdsharebuttonbox .bds_tqq{ background-position:-66px 0;}
+.myshare .bdsharebuttonbox .bds_t163{ background-position:-99px 0;}
+.myshare .bdsharebuttonbox .bds_more{ background-position:-130px 0; float:right;}
+
+.goT .btns{ padding-right:70px;}
+.myshare-0{ float:left; margin-top:-5px;}
+.gnq{ height:32px; overflow:hidden; margin-bottom:20px;}
+
+.tags{ height:27px; line-height:27px; padding-bottom:15px; border-bottom:1px solid #cccccc; margin-top:30px;}
+.tags a{ display:inline-block; float:left; width:150px; text-align:center; background:#666666; border-radius:12px; color:#fff; font-size:13px; margin-left:10px; position:relative;}
+.tags .on{ background:#0070d9;}
+.tags em{ background:url(../images/sj3.gif)/*tpa=http://www.tljchina.cn/images/sj3.gif*/ no-repeat; width:15px; height:8px; position:absolute; left:69px; bottom:-16px; display:none;}
+.tags .on em{ display:block;}
+.t-article{ padding:15px 10px 0; display:none;}
+.t-article img{ max-width:725px;}
+.job{ margin-bottom:30px;}
+.job th{ height:37px; background:#A8BE7D; font-size:20px; color:#4c392e;}
+.job td{ font-size:14px; color:#4c392e; height:50px; border-bottom:1px dashed #A8BE7D;}
+.job td a{ color:#4c392e;}
+.post{ margin-left:20px;}
+.ing{ width:80px; height:29px; line-height:29px; text-align:center; background:#a8be7d; display:inline-block;}
+.job .over{ background:#9d9e9e; color:#fff;}
+
+.k{ overflow:hidden; zoom:1;}
+.job-title{ width:128px; height:37px; float:left; background:#A8BE7D; font-size:16px; color:#4c392e; line-height:37px; text-align:center;}
+.k ul{ float:left; padding-left:15px; width:560px;}
+.k ul li{ min-height:37px; line-height:37px; background:#f3f7f1; color:#4c392e; font-size:14px; padding:0 12px; margin-bottom:12px;}
+.fd-tips{ font-size:14px; color:#4c392e; line-height:24px; padding:10px 20px; background:#A8BE7D; margin-top:20px;}
+.go-job{ width:110px; height:29px; background:#f6a54b; display:inline-block; float:right; text-align:center; line-height:29px; font-size:14px; margin-bottom:20px;}
+.msg{ padding:28px 0; background:#A8BE7D; margin:20px;}
+.msg li{ width:320px;  float:left; height:32px; position:relative; margin:0 16px 15px;}
+.msg .tx{background:#fff; border-radius:10px; overflow:hidden;}
+.msg .tx .text{ height:16px; line-height:16px; margin:5px 0 0 12px; font-family:'微软雅黑'; font-size:14px; color:#4c392e; width:297px; padding:2px 0;}
+.msg textarea{ width:652px; height:100px; padding:5px 10px; background:#fff; border-radius:10px; border:none; overflow-y:auto; resize:none; margin-left:16px;font-family:'微软雅黑'; font-size:14px; color:#4c392e; }
+.adv span{ font-size:14px; color:#4c392e;  line-height:14px;}
+.adv em{ color:#fff; font-size:36px;}
+.msgBtn { text-align:right; padding-top:15px;}
+.msgBtn .tj{ width:170px; height:38px; background:#b6d199; color:#4c392e; font-size:16px; margin-right:15px;}
+.msgBtn .rst{ width:60px; height:38px; background:#545953; color:#fff; font-size:12px; line-height:14px; margin-right:20px;}
+
+.leftbox{ width:130px; float:left; padding-left:35px;}
+.leftbox a{ display:block; width:130px; height:130px; text-align:center; background:#c9caca; color:#fff; line-height:26px; margin-bottom:10px;}
+.leftbox strong{ font-size:24px; display:block; padding-top:38px;}
+.leftbox span{ font-size:28px;}
+.leftbox .on{ background:#A8BE7D;}
+.leftbox .on strong{ color:#4c392e}
+.regbox{ width:590px; float:left; background:#e8f1e0;  margin-left:10px; _display:inline; display:none; min-height:400px;}
+.regpad{ padding:25px; overflow:hidden; zoom:1;}
+.rtb{ font-size:14px; color:#4c392e;}
+.rtb .text{ height:18px; line-height:18px; padding:4px; width:200px; border:1px solid #9a9587; background:#f4f8f0;}
+.rtb b{ float:left; margin:19px 8px 0 0; font-size:28px; color:#f6a54b;}
+.rtb div{ float:left; height:70px;}
+.rtb label{ cursor:pointer; display:block; width:160px; height:19px; line-height:19px; position:relative; float:left;}
+.ckbox{ margin:0 10px 0 18px; opacity:0; filter:alpha(opacity=0);}
+.rtb label em{ display:block; width:15px; height:15px; border:1px solid #9a9587; background:#e8f1e0; position:absolute; left:17px; top:1px; z-index:0;}
+#agree span{ background:url(../images/bset.png)/*tpa=http://www.tljchina.cn/images/bset.png*/ no-repeat; width:22px; height:18px; position:absolute; left:0; bottom:0; display:none;}
+.imp{ float:left; margin-left:30px; line-height:9px; margin-top:6px;}
+.imp span{font-size:28px; color:#f6a54b; margin:5px 5px 0 0; float:left;}
+.rtb .rbtn{ background:#A8BE7D; color:#4c392e; width:130px; height:35px; margin-left:16px;}
+.rst{ width:143px; height:35px; color:#fff; font-size:14px; background:#5c5e5a; margin-left:15px;}
+
+.scroll{ line-height:24px; color:#4c392e; height:248px; overflow-y:auto; margin-bottom:30px; border:1px solid #999589; padding:10px 10px 0; background-color:#f5f8f1;}
+.backReg{ width:133px; height:35px; background:#A8BE7D; color:#4c392e; font-size:16px; display:block; text-align:center; line-height:35px; float:right;}
+
+/*8.12*/
+.m-cloumn .car{ background:url(../images/c-ico7.png)/*tpa=http://www.tljchina.cn/images/c-ico7.png*/ no-repeat left;}
+.gwc{ height:40px; line-height:40px; background-color:#A8BE7D; color:#4c392e; font-size:28px; text-indent:12px; margin-bottom:20px;}
+.car-list th{ height:40px; background-color:#e8f1e0; font-size:18px; font-weight:normal;}
+.car-list td{ height:46px; font-size:14px; border-bottom:1px solid #c9caca;}
+.brand{ margin-right:10px; margin-left:20px;}
+.car-list .text{ width:50px; height:22px; line-height:22px; text-align:center; border:1px solid #9d9e9e;}
+.tot{ height:48px; line-height:48px; text-align:right; font-size:14px;border-bottom:1px solid #c9caca; padding-right:42px; color:#000;}
+.ewd{ height:48px; line-height:48px;border-bottom:1px solid #c9caca; margin-bottom:15px;}
+.ewd p{ float:left; color:#898989; font-size:14px;}
+.ewd em{ margin-left:30px;}
+.addc{ float:right; background:#e8f1e0; width:87px; height:28px; float:right; line-height:28px; text-align:center; margin:10px 5px 0 0;}
+.addc:hover{ background:#A8BE7D; color:#f08300;}
+.jbtn{ height:33px;}
+.jbtn a,.jbtn button{ background:url(../images/jsbtn.png)/*tpa=http://www.tljchina.cn/images/jsbtn.png*/ no-repeat;height:33px; display:inline-block; float:right; width:124px; margin-left:10px;}
+.jbtn .goon{ background-position:0 -36px;}
+.jbtn .settle{ background-position:-134px -36px;}
+.jbtn .goon:hover{ background-position:0 0;}
+.jbtn .settle:hover{ background-position:-134px 0;}
+.car-list i{ width:18px; height:18px; line-height:18px; cursor:pointer; border:1px solid #9d9e9e; text-align:center; display:inline-block; float:left; margin-top:2px;}
+.cleCen{ float:left; margin:0 4px;}
+#sum{ font-size:16px;}
+.dr{ position:absolute; top:0; left:55px;}
+
+
+
+/*8.26会员*/
+.kno{font-size:16px;width:365px; height:20px; padding:10px 5px; border:1px  solid #9e978c; background-color:#f0f6eb; margin-left:20px;}
+.int-search .kbtn{ color:#fff; width:75px; height:28px; color:#fff; background:#5e5f5d; font-size:12px; margin-left:24px;}
+.int-search .kbtn:hover{ background:#A8BE7D; color:#60584a}
+.kd .on strong{ color:#fff;}
+.kdtable .text{ width:200px; height:18px; line-height:18px; padding:4px 5px; border:1px solid #9a9587; background-color:#f4f8f0; color:#4c392e;}
+.kdtable select{ width:60px; height:28px; line-height:28px; padding:2px 0;border:1px solid #9a9587; background-color:#f4f8f0; color:#4c392e; margin-right:10px; font-family:'微软雅黑'; font-size:14px;}
+.kdtable td{ padding:10px 0; border-bottom:1px dashed #ffffff; font-size:14px;}
+.regpad2{ padding:20px 0; min-height:231px;}
+.kdtable .btn{ width:133px; height:34px; color:#fff; background-color:#5c5e5a;}
+.kdtable .btn:hover{ background:#A8BE7D;color:#60584a;}
+
+
+.relsut{ padding:20px 0 0 60px; font-size:14px;}
+.wrong{ color:#c00;}
+
+.padTab td{ padding:0 10px;}
+.p-infor-img img{ max-width:350px; max-height:300px;}
+.adjust{ padding-left:15px;}
+
+
+.lb-d{ height:34px; margin-bottom:20px;}
+.lb-d a{ display:inline-block; float:left; width:92px; height:34px; line-height:34px; border-right:1px solid #fff;font-size:14px; background:#4c392e; text-align:center; color:#fff;}
+.lb-d .on{ color:#4c392e; background:#C8DDC2; }
+
+
+
+
+
+
+
